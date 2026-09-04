@@ -1,0 +1,1 @@
+/backups             [36m (Status: 301)[0m [Size: 236][34m [--> http://10.49.172.73/backups/][0m

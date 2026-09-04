@@ -1,0 +1,46 @@
+# Nmap 7.95 scan initiated Mon May 25 08:23:30 2026 as: /usr/lib/nmap/nmap --privileged -p- -A -T4 -sV -oN full_scan.txt 10.48.180.30
+Nmap scan report for 10.48.180.30
+Host is up (0.11s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    nginx 1.16.1
+|_http-title: Welcome to nginx!
+|_http-server-header: nginx/1.16.1
+| http-robots.txt: 1 disallowed entry 
+|_/
+6498/tcp  open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 30:4a:2b:22:ac:d9:56:09:f2:da:12:20:57:f4:6c:d4 (RSA)
+|   256 bf:86:c9:c7:b7:ef:8c:8b:b9:94:ae:01:88:c0:85:4d (ECDSA)
+|_  256 a1:72:ef:6c:81:29:13:ef:5a:6c:24:03:4c:fe:3d:0b (ED25519)
+65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu))
+|_http-server-header: Apache/2.4.43 (Ubuntu)
+|_http-title: Apache2 Debian Default Page: It works
+| http-robots.txt: 1 disallowed entry 
+|_/
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=5/25%OT=80%CT=1%CU=41298%PV=Y%DS=3%DC=T%G=Y%TM=6A1479C
+OS:8%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=105%TI=Z%CI=Z%II=I%TS=A)SEQ
+OS:(SP=104%GCD=1%ISR=107%TI=Z%CI=Z%TS=A)SEQ(SP=105%GCD=1%ISR=10A%TI=Z%CI=Z%
+OS:II=I%TS=A)SEQ(SP=107%GCD=1%ISR=10D%TI=Z%CI=Z%TS=A)SEQ(SP=108%GCD=1%ISR=1
+OS:09%TI=Z%CI=Z%TS=A)OPS(O1=M4E8ST11NW6%O2=M4E8ST11NW6%O3=M4E8NNT11NW6%O4=M
+OS:4E8ST11NW6%O5=M4E8ST11NW6%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B
+OS:3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW6%CC=Y%Q=)T1(R=Y%D
+OS:F=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=
+OS:Z%F=R%O=%RD=0%Q=)T5(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6
+OS:(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%
+OS:F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=
+OS:G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 1025/tcp)
+HOP RTT       ADDRESS
+1   106.36 ms 192.168.128.1
+2   ...
+3   106.75 ms 10.48.180.30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon May 25 08:33:12 2026 -- 1 IP address (1 host up) scanned in 582.17 seconds

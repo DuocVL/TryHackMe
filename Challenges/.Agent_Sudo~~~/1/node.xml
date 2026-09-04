@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="1" master_id="0" name="Tong quan thu thach" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773191760" ts_lastsave="1773192025">
+    <rich_text link="webs https://tryhackme.com/room/agentsudoctf">https://tryhackme.com/room/agentsudoctf</rich_text>
+  </node>
+</cherrytree>

@@ -1,0 +1,42 @@
+# Nmap 7.95 scan initiated Tue Mar 10 15:48:48 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -oN ScanPort.txt 10.48.154.73
+Nmap scan report for 10.48.154.73
+Host is up (0.16s latency).
+Not shown: 967 filtered tcp ports (no-response), 30 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 550 Permission denied.
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.250.70
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.5 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 cb:e6:3f:8e:90:fc:12:7b:f0:71:f4:c6:33:01:d7:94 (RSA)
+|   256 d7:e1:67:d7:12:3e:5c:c2:2a:62:47:6f:e5:64:21:ee (ECDSA)
+|_  256 f4:28:70:ea:17:e1:8b:7a:e8:14:92:90:49:d1:09:47 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+Aggressive OS guesses: Linux 4.15 - 5.19 (90%), Linux 4.15 (89%), Linux 5.4 (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.13 (88%), Ubiquiti AirMax NanoStation WAP (Linux 2.6.32) (88%), Linux 3.7 (88%), OpenWrt 19.07 (Linux 4.14) (88%), Linux 5.0 - 5.14 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 3 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 44443/tcp)
+HOP RTT       ADDRESS
+1   172.46 ms 192.168.128.1
+2   ...
+3   172.83 ms 10.48.154.73
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar 10 15:49:24 2026 -- 1 IP address (1 host up) scanned in 36.10 seconds

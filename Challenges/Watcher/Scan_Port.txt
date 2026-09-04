@@ -1,0 +1,39 @@
+# Nmap 7.95 scan initiated Thu May 28 01:48:28 2026 as: /usr/lib/nmap/nmap --privileged -A -sV -T4 -oN Scan_Port.txt 10.49.160.238
+Nmap scan report for 10.49.160.238
+Host is up (0.12s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 15:d8:18:38:0f:80:40:9f:ea:65:b1:de:6b:6e:d0:d2 (RSA)
+|   256 9a:76:2e:0f:35:17:e1:2d:35:b8:04:d8:4e:3a:3d:44 (ECDSA)
+|_  256 6e:8b:14:71:ad:52:5e:55:15:92:34:5f:6c:6e:65:45 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-generator: Jekyll v4.1.1
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=5/28%OT=21%CT=1%CU=41203%PV=Y%DS=3%DC=T%G=Y%TM=6A180F9
+OS:8%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=104%TI=Z%CI=Z%II=I%TS=A)SEQ
+OS:(SP=105%GCD=1%ISR=10A%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=107%GCD=1%ISR=103%TI=Z%
+OS:CI=Z%II=I%TS=A)SEQ(SP=108%GCD=1%ISR=10D%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M4E8S
+OS:T11NW7%O2=M4E8ST11NW7%O3=M4E8NNT11NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M
+OS:4E8ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y
+OS:%T=40%W=F507%O=M4E8NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=
+OS:)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T
+OS:=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=
+OS:0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=
+OS:164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 995/tcp)
+HOP RTT       ADDRESS
+1   111.18 ms 192.168.128.1
+2   ...
+3   112.94 ms 10.49.160.238
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May 28 01:49:12 2026 -- 1 IP address (1 host up) scanned in 44.42 seconds

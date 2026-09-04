@@ -1,0 +1,30 @@
+# Nmap 7.95 scan initiated Sun May 24 23:21:16 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -sV -oN Scan_Port.txt 10.48.152.150
+Nmap scan report for 10.48.152.150
+Host is up (0.18s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 58:1b:0c:0f:fa:cf:05:be:4c:c0:7a:f1:f1:88:61:1c (RSA)
+|   256 3c:fc:e8:a3:7e:03:9a:30:2c:77:e0:0a:1c:e4:52:e6 (ECDSA)
+|_  256 9d:59:c6:c7:79:c5:54:c4:1d:aa:e4:d1:84:71:01:92 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Mustacchio | Home
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized
+Running (JUST GUESSING): Linux 4.X|5.X|3.X (91%), Crestron 2-Series (85%)
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/o:linux:linux_kernel:3 cpe:/o:crestron:2_series
+Aggressive OS guesses: Linux 4.15 - 5.19 (91%), Linux 3.10 - 3.13 (89%), Linux 4.15 (88%), Amazon Linux AMI 2018.03 (Linux 4.14) (86%), Crestron XPanel control system (85%), Linux 3.8 - 3.16 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   157.77 ms 192.168.128.1
+2   ...
+3   187.36 ms 10.48.152.150
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 24 23:22:01 2026 -- 1 IP address (1 host up) scanned in 45.27 seconds

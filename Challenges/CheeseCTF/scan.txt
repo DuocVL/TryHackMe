@@ -1,0 +1,1289 @@
+# Nmap 7.95 scan initiated Wed Aug  5 09:17:12 2026 as: /usr/lib/nmap/nmap -sV -oN scan.txt 10.48.132.2
+Nmap scan report for thecheeseshop.com (10.48.132.2)
+Host is up (0.47s latency).
+
+PORT      STATE SERVICE               VERSION
+1/tcp     open  tcpmux?
+3/tcp     open  compressnet?
+4/tcp     open  unknown
+6/tcp     open  unknown
+7/tcp     open  echo?
+9/tcp     open  discard?
+13/tcp    open  daytime?
+17/tcp    open  qotd?
+19/tcp    open  chargen?
+20/tcp    open  ftp-data?
+21/tcp    open  ftp?
+22/tcp    open  ssh                   OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+23/tcp    open  telnet?
+24/tcp    open  priv-mail?
+25/tcp    open  smtp?
+26/tcp    open  rsftp?
+30/tcp    open  unknown
+32/tcp    open  unknown
+33/tcp    open  dsp?
+37/tcp    open  time?
+42/tcp    open  nameserver?
+43/tcp    open  whois?
+49/tcp    open  tacacs?
+53/tcp    open  domain?
+70/tcp    open  http                  Apache Tomcat 6q (z.2..0-s^; ....wE.)
+79/tcp    open  finger?
+80/tcp    open  http                  Apache httpd 2.4.41 ((Ubuntu))
+81/tcp    open  http                  Apache httpd (PHP ruEs)
+82/tcp    open  xfer?
+83/tcp    open  http                  peercast.org
+84/tcp    open  http-proxy            HAVP anti-virus web proxy
+85/tcp    open  mit-ml-dev?
+88/tcp    open  http                  Oracle XDB httpd 9
+89/tcp    open  su-mit-tg?
+90/tcp    open  dnsix?
+99/tcp    open  imap                  Merak Mail Server imapd 1njh
+100/tcp   open  http                  NewCS satellite card sharing system http config
+106/tcp   open  pop3pw?
+109/tcp   open  telnet                HP Integrated Lights Out telnetd
+110/tcp   open  http-proxy            URL Gateway http proxy YzgEWW
+111/tcp   open  nntp                  Typhoon nntpd 3
+113/tcp   open  ident?
+119/tcp   open  nntp?
+125/tcp   open  http                  JC-HTTPD vbDsbrGGb (Belkin Network USB Hub http config)
+135/tcp   open  rtsp                  RogueAmoeba Airfoil rtspd
+139/tcp   open  http                  Boa HTTPd 2ZHSteMd
+143/tcp   open  http                  Deerfield VisNetic WebSite Professional 1jHiOU
+144/tcp   open  donkey                MLDonkey multi-network P2P server information port
+146/tcp   open  iso-tp0?
+161/tcp   open  boinc                 Boinc GUI RPC port
+163/tcp   open  cmip-man?
+179/tcp   open  bgp?
+199/tcp   open  socks5
+211/tcp   open  914c-g?
+212/tcp   open  http                  GoAhead WebServer (Venturi wireless accelerator http config)
+222/tcp   open  telnet                APC PDU/UPS devices or Windows CE telnetd
+254/tcp   open  ftp                   ArGoSoft ftpd 62
+255/tcp   open  unknown
+256/tcp   open  cvspserver            SunOS cvs pserver
+259/tcp   open  esro-gen?
+264/tcp   open  bgmp?
+280/tcp   open  sip                   Sphericall/H Build/8r (Status: g)
+301/tcp   open  ident                 midentd
+306/tcp   open  http                  Axigen webadmin httpd
+311/tcp   open  telnet                Cisco 1721 router telnetd
+340/tcp   open  ftp                   FileZilla ftpd (Mandatory SSL)
+366/tcp   open  odmr?
+389/tcp   open  http                  McData 4500 fibre switch http config
+406/tcp   open  http                  Oki Data CfCdP+ printer http config (JC-HTTPD 6)
+407/tcp   open  smtp                  qpsmtpd smtpd
+416/tcp   open  ppp                   pppd
+417/tcp   open  onmux?
+425/tcp   open  telnet                MLDonkey multi-network P2P admin port
+427/tcp   open  http                  PRINT_SERVER WEB v (Netgear PS110 print server http config)
+443/tcp   open  nntp
+444/tcp   open  snpp?
+445/tcp   open  microsoft-ds?
+458/tcp   open  appleqtc?
+464/tcp   open  http                  Netgear GS724T Switch http config
+465/tcp   open  smtps?
+481/tcp   open  dvs?
+497/tcp   open  http                  Embedded HTTP Server g (D-Link fBOzSVncM http config)
+500/tcp   open  stockfish             Stockfish chess engine
+512/tcp   open  smtp
+513/tcp   open  ftp                   Witelcom router ftpd 807
+514/tcp   open  pop3pw                poppassd pIfiy
+515/tcp   open  printer?
+524/tcp   open  ncp?
+541/tcp   open  http                  Wildcat Interactive Net Server httpd CEwIQWKAz
+543/tcp   open  ftp                   smallftpd 703288549
+544/tcp   open  http                  Linksys router http config (device model cTir)
+545/tcp   open  http                  Netcomm NB5580 http config
+548/tcp   open  afp?
+554/tcp   open  telnet                D-Link DGS-3100 switch telnetd
+555/tcp   open  irc                   iacd ircd
+563/tcp   open  snews?
+587/tcp   open  http                  Yello Strom Sparzaehler electricity meter httpd
+593/tcp   open  telnet                SMAUG MUD server 41714024
+616/tcp   open  smtp                  Postfix smtpd (Debian)
+617/tcp   open  http-proxy            thttpd (Blue Coat PacketShaper 3500 firewall)
+625/tcp   open  ms-sql-s              Microsoft SQL Server
+631/tcp   open  ipp                   ASSP/NcSHHD(?)?
+636/tcp   open  http                  3Com OfficeConnect wireless router http config
+646/tcp   open  ftp                   Hay Systems HSL 2.75G Femtocell ftpd
+648/tcp   open  http                  Icecast streaming media server (-p [Station])
+666/tcp   open  smtp                  SubEtha smtpd MKs
+667/tcp   open  telnet                Dell PowerConnect 6248 switch telnetd
+668/tcp   open  http                  Ipswitch IMail Web Calendar 6Ww
+683/tcp   open  telnet                Hawking/TRENDnet Print Server telnetd
+687/tcp   open  asipregistry?
+691/tcp   open  http                  Lexmark printer http config
+700/tcp   open  telnet                Alcatel OmniSwitch 6400 or 8600 switch telnetd
+705/tcp   open  ftp                   Plan 9 ftpd
+711/tcp   open  http                  Rumpus httpd
+714/tcp   open  iris-xpcs?
+720/tcp   open  http                  Spambayes pop3proxy web interface
+722/tcp   open  http                  Netwave IP camera http config
+726/tcp   open  tmail                 T-Mail yK
+749/tcp   open  telnet                BusyBox telnetd
+765/tcp   open  http                  ACOS httpd 809 (Foxconn VoIP TRIO 3C http config)
+777/tcp   open  gamebots              GameBots for Unreal Tournament 2004
+783/tcp   open  spamassassin?
+787/tcp   open  qsc?
+800/tcp   open  imap                  MailSite imapd LUE-ZxjXh
+801/tcp   open  telnet                ZyXEL Prestige cable modem telnetd
+808/tcp   open  ccproxy-http?
+843/tcp   open  http                  Aladdin/SafeNet HASP license manager bcpL
+873/tcp   open  ftp                   Oc.. ColorWave wQ printer ftpd SLkdBPp
+880/tcp   open  pop3pw                ModusMail poppassd
+888/tcp   open  ftp-proxy             WinProxy FTP proxy
+898/tcp   open  http                  Sun GlassFish oKfDHh (Servlet RtJuGmaLa)
+900/tcp   open  http                  Systinet Server for Java 529 (.)
+901/tcp   open  netdevil              Net-Devil backdoor (**TROJAN**)
+902/tcp   open  iss-realsecure?
+903/tcp   open  ftp                   Epson printer ftpd 9nh (Epson .N.!PBT.)
+911/tcp   open  smtp                  ALT-N SecurityGateway smtpd 9144l7492c09087
+912/tcp   open  soap                  Dell 1130n printer soap
+981/tcp   open  http                  Oracle HTTP Server Powered by Apache
+987/tcp   open  unknown
+990/tcp   open  telnet
+992/tcp   open  ssh                   (protocol 2.0)
+993/tcp   open  imaps?
+995/tcp   open  pop3s?
+999/tcp   open  telnet
+1000/tcp  open  vnc                   (protocol 3)
+1001/tcp  open  webpush?
+1002/tcp  open  imap                  DBMail imapd 1H (imapd version may differ from overal dbmail version number)
+1007/tcp  open  unknown
+1009/tcp  open  printer               lpd (path: jTVVsNIh/lpd; error: l)
+1010/tcp  open  surf?
+1011/tcp  open  unknown
+1021/tcp  open  http-proxy            Cisco Application Control Engine XML gateway
+1022/tcp  open  http                  Lime Technology unRAID Server httpd 4.X
+1023/tcp  open  http                  IP_SHARER WEB uOv_Vuc (Airlink/Sitecom wireless router)
+1024/tcp  open  ftp
+1025/tcp  open  NFS-or-IIS?
+1026/tcp  open  telnet                BusyBox telnetd 0.61 - 1.00-pre7
+1027/tcp  open  ftp                   NET Disk/NetStore ftpd
+1028/tcp  open  unknown
+1029/tcp  open  ms-lsa?
+1030/tcp  open  telnet                Dell iDRAC6 telnetd
+1031/tcp  open  telnet                IBM switch telnetd
+1032/tcp  open  http                  Citrix Cyms-SecS qPl
+1033/tcp  open  telnet                Network Systems Group router telnetd
+1034/tcp  open  zincite-a?
+1035/tcp  open  multidropper?
+1036/tcp  open  irc
+1037/tcp  open  ftp                   ProFTPD 5
+1038/tcp  open  http                  OpenWrt BusyBox httpd
+1039/tcp  open  ftp                   Microsoft FTP Service
+1040/tcp  open  netsaint?
+1041/tcp  open  http                  Oracle 9iAS Web Cache 1HauTUE
+1042/tcp  open  afrog?
+1043/tcp  open  ftp                   TYPSoft ftpd 242416582
+1044/tcp  open  telnet                Nortel Alteon switch telnetd
+1045/tcp  open  fpitp?
+1046/tcp  open  http                  3Com X5 Unified Security Platform IPS http config
+1047/tcp  open  neod1?
+1048/tcp  open  afbackup              afbackup 500
+1049/tcp  open  ftp                   FreeFTPd 5047707
+1050/tcp  open  ftp                   Dreambox ftpd (PLi image)
+1051/tcp  open  telnet                Olicom 8601 CrossFire token-ring switch manager telnetd
+1052/tcp  open  telnet                Cisco telnetd
+1053/tcp  open  http                  RapidLogic httpd 5035 (Westell VersaLink WAP http config)
+1054/tcp  open  telnet                Livingston Portmaster telnetd
+1055/tcp  open  ansyslmd?
+1056/tcp  open  http                  Synchronet BBS httpd Ix (BBS name @f)
+1057/tcp  open  http                  ENI-Web httpd _887 (Efficient SpeedStream router http config)
+1058/tcp  open  ftp                   vsftpd 5452959022
+1059/tcp  open  nimreg?
+1060/tcp  open  pop3
+1061/tcp  open  http                  KHAPI httpd 63770519
+1062/tcp  open  telnet                BusyBox telnetd 0.61 - 1.00-pre7
+1063/tcp  open  kyoceranetdev?
+1064/tcp  open  ftp                   Lantronix MPS100 ftpd 91982248
+1065/tcp  open  http                  HP/Compaq Integrated Lights-Out http config
+1066/tcp  open  irc                   ConferenceRoom ircd (Spanish)
+1067/tcp  open  telnet                slush telnetd 78200 (EdiluoWHF)
+1068/tcp  open  ssl/imap              Cyrus imapd
+1069/tcp  open  cognex-insight?
+1070/tcp  open  boinc                 Boinc GUI RPC port
+1071/tcp  open  finger                SGI IRIX or NeXTSTEP fingerd
+1072/tcp  open  cardax?
+1073/tcp  open  nntp                  Colobus nntpd 1 (posting ok)
+1074/tcp  open  telnet                Nortel 460-24T-PWR switch telnetd
+1075/tcp  open  http                  Google Web Toolkit httpd
+1076/tcp  open  http                  Medusa httpd amb (Supervisor process manager)
+1077/tcp  open  rtsp                  Microsoft Windows Media Services GKxqCvI (Spanish)
+1078/tcp  open  http                  Embedded HTTP Server tP-fGC (D-Link DWL-wG WAP http config)
+1079/tcp  open  telnet                Huawei telnetd
+1080/tcp  open  ssh                   (protocol 5034)
+1081/tcp  open  telnet                Huawei HG655b DSL router telnetd
+1082/tcp  open  ipp                   SEH Computertechnik IPP
+1083/tcp  open  ftp                   SwiFTP (Android phone)
+1084/tcp  open  ftp                   Cisco Site Selector ftpd
+1085/tcp  open  webobjects?
+1086/tcp  open  cplscrambler-lg?
+1087/tcp  open  http                  DirectAdmin httpd 2634382 (Registered to .UV...d)
+1088/tcp  open  http                  Cisco WAP2000 WAP http config
+1089/tcp  open  ff-annunc?
+1090/tcp  open  http                  Netgear ProSafe VPN firewall http config
+1091/tcp  open  ff-sm?
+1092/tcp  open  http                  Tivoli Storage Manager http interface 1859 (discontinued)
+1093/tcp  open  proofd?
+1094/tcp  open  ftp                   Kyocera Mita TASKalfa 300ci printer ftpd -IM
+1095/tcp  open  http                  Micro-Web (HP StorageWorks MSL Tape Library http config)
+1096/tcp  open  ixia-unknown          Ixia 400T traffic QA
+1097/tcp  open  sunclustermgr?
+1098/tcp  open  ms-sql-s              Microsoft SQL Server
+1099/tcp  open  http                  IDS-Server httpd 348658
+1100/tcp  open  http                  Quantum backup appliance http config 79825039
+1102/tcp  open  telnet                Allied Telesyn cFUJsVB switch telnetd 27426441
+1104/tcp  open  ftp-proxy             WinProxy FTP proxy
+1105/tcp  open  nagios-nsca           Nagios NSCA
+1106/tcp  open  isoipsigport-1?
+1107/tcp  open  isoipsigport-2?
+1108/tcp  open  ratio-adp?
+1110/tcp  open  http                  NTL/Ambit DOCSIS router http config (R01)
+1111/tcp  open  lmsocialserver?
+1112/tcp  open  http                  Embedded HTTP Server G (D-Link DWL-810+ WAP http config)
+1113/tcp  open  telnet                Hummingbird windows telnetd 832
+1114/tcp  open  mini-sql?
+1117/tcp  open  http                  GoAhead WebServer (Dell PowerConnect 3024 switch http config)
+1119/tcp  open  ftp-proxy             AVM KEN! ftp proxy
+1121/tcp  open  uptime-agent          up.time server monitor
+1122/tcp  open  http                  MediaCoder media converter http interface
+1123/tcp  open  http                  Control By Web X-_XLp remote management http interface
+1124/tcp  open  http                  Apple AirPlay httpd
+1126/tcp  open  hpvmmdata?
+1130/tcp  open  backdoor              Theef trojan (**BACKDOOR**)
+1131/tcp  open  caspssl?
+1132/tcp  open  kvm-via-ip?
+1137/tcp  open  http                  Tweak XP web advertisement blocker
+1138/tcp  open  nntp                  InterNetNews (INN) q
+1141/tcp  open  mxomss?
+1145/tcp  open  nagios-nsca           Nagios NSCA
+1147/tcp  open  capioverlan?
+1148/tcp  open  elfiq-repl?
+1149/tcp  open  http                  Canon Pixma printer http config (KS_HTTP 60)
+1151/tcp  open  telnet                VxWorks telnetd
+1152/tcp  open  irc-proxy             sbnc
+1154/tcp  open  upnp                  MiniDLNA eDc (DLNADOC ErfvR; UPnP P)
+1163/tcp  open  sddp?
+1164/tcp  open  http                  Citrix Secure Gateway http admin
+1165/tcp  open  qsm-gui?
+1166/tcp  open  qsm-remote?
+1169/tcp  open  tripwire?
+1174/tcp  open  qds                   QlikView Distribution Service MLkYArrA
+1175/tcp  open  sdcomm                RSA SecureID Ace Server
+1183/tcp  open  llsurfup-http?
+1185/tcp  open  http                  micro_httpd (USRobotics router http config)
+1186/tcp  open  http                  Microsoft IIS httpd (German)
+1187/tcp  open  alias?
+1192/tcp  open  caids-sensor?
+1198/tcp  open  cajo-discovery?
+1199/tcp  open  imap                  Floosietek FTgate imapd
+1201/tcp  open  nucleus-sand?
+1213/tcp  open  http                  Netscape-Commerce httpd 0458
+1216/tcp  open  ftp                   ps2ftpd
+1217/tcp  open  hpss-ndapi?
+1218/tcp  open  aeroflight-ads?
+1233/tcp  open  univ-appserver?
+1234/tcp  open  hotline?
+1236/tcp  open  http                  Microsoft Windows Media Services 7wX-SkpCS
+1244/tcp  open  ftp                   Konica Minolta bizhub printer smtpd
+1247/tcp  open  smtp                  Sendmail 07587 (on A/UX 840685)
+1248/tcp  open  hermes?
+1259/tcp  open  opennl-voice?
+1271/tcp  open  http                  StrongDC++ httpd
+1272/tcp  open  aspi                  ASPI server 911307
+1277/tcp  open  miva-mqs?
+1287/tcp  open  websm                 AIX wsmserver
+1296/tcp  open  pop3                  WinRoute Pro pop3 035497
+1300/tcp  open  mu-connect            Webzen MU Online role-playing game connect
+1301/tcp  open  http                  Microsoft IIS httpd
+1309/tcp  open  jtag-server?
+1310/tcp  open  husky?
+1311/tcp  open  finger                xfingerd
+1322/tcp  open  http                  Swann DVR8-2600 security camera system httpd
+1328/tcp  open  ftp                   TYPSoft ftpd
+1334/tcp  open  pop3                  ArGoSoft Mail Server pop3d O
+1352/tcp  open  lotusnotes?
+1417/tcp  open  smtp                  Internet Rex smtpd
+1433/tcp  open  ms-sql-s?
+1434/tcp  open  jabber                jabberd instant messaging server
+1443/tcp  open  http                  ELMO rFuMC Visual Presenter http config
+1455/tcp  open  esl-lm?
+1461/tcp  open  http                  wgt_http 611084477 (Eumex 704PC ADSL router)
+1494/tcp  open  ident                 GTA GB-Ware firewall identd
+1500/tcp  open  http-proxy            Netscape-proxy 5
+1501/tcp  open  sas-3?
+1503/tcp  open  http                  jDownloader httpd
+1521/tcp  open  telnet
+1524/tcp  open  ssl/ingreslock?
+1533/tcp  open  ftp-proxy             ezProxy ftp proxy
+1556/tcp  open  ftp                   ProFTPD HWqg_DSI
+1580/tcp  open  tn-tl-r1?
+1583/tcp  open  http                  Alfred RenderMan control httpd 76489
+1594/tcp  open  http                  Jetty (Gerrit code review)
+1600/tcp  open  http                  Oracle 9iAS J2EE httpd 2wuFdx
+1641/tcp  open  invision?
+1658/tcp  open  pop3                  ipop3d 5cflTS
+1666/tcp  open  netview-aix-6?
+1687/tcp  open  nsjtp-ctrl?
+1688/tcp  open  http                  Cherokee httpd FXTTLnaaH (Ubuntu)
+1700/tcp  open  mps-raft?
+1717/tcp  open  http                  TRENDnet TV-IP110W webcam display httpd
+1718/tcp  open  smtp                  Postfix smtpd JKd (f)
+1719/tcp  open  nntp                  Microsoft NNTP Service ZX
+1720/tcp  open  nntp                  Jana nntpd (posting ok)
+1721/tcp  open  http                  Indy httpd 75376101 (FreeKiSS DVD player http config)
+1723/tcp  open  ftp                   ACLogic CesarFTP tcOKLR
+1755/tcp  open  http                  Cisco RV 120W or RV 180 WAP http config
+1761/tcp  open  landesk-rc?
+1782/tcp  open  http                  Sun StorEdge 3511 http config HlXcmrfL
+1783/tcp  open  unknown
+1801/tcp  open  ftp                   ProFTPD (French)
+1805/tcp  open  http                  TP-LINK Web Smart Switch http config
+1812/tcp  open  ftp                   Verteiltes Printen und Plotten ftpd 6
+1839/tcp  open  http                  Microsoft IIS WebDAV
+1840/tcp  open  ftp-proxy             Generic FTP proxy 883569599
+1862/tcp  open  http                  Juniper Seca HTTPS VPN appliance
+1863/tcp  open  msnp?
+1864/tcp  open  http                  Java Jigsaw httpd fklzvM
+1875/tcp  open  smtp-proxy            MailFoundry antispam smtp proxy
+1900/tcp  open  telnet
+1914/tcp  open  elm-momentum?
+1935/tcp  open  http                  GNUMP3d streaming server 821109122
+1947/tcp  open  sentinelsrm?
+1971/tcp  open  telnet                Dreambox DVB telnetd (Kernel 3oRhh)
+1972/tcp  open  http                  micro_httpd
+1974/tcp  open  drp?
+1984/tcp  open  http                  RapidLogic httpd 0
+1998/tcp  open  http                  Control By Web X-y remote management http interface
+1999/tcp  open  http                  HP TippingPoint 110 or 1200E IPS http config
+2000/tcp  open  http                  Tandem NSK D40 http config
+2001/tcp  open  pop3                  Netscape Messaginging Server pop3d 01023942
+2002/tcp  open  http-proxy            AVM FRITZ!Box Fon WAP http proxy
+2003/tcp  open  rtsp
+2004/tcp  open  irc                   ircu ircd
+2005/tcp  open  imap
+2006/tcp  open  telnet                Hawking/TRENDnet Print Server telnetd
+2007/tcp  open  dectalk?
+2008/tcp  open  conf?
+2009/tcp  open  news?
+2010/tcp  open  nntp                  Microsoft NNTP Service (refused)
+2013/tcp  open  http                  Apt-cacher httpd FZ
+2020/tcp  open  smtp                  Classic Hamster smtpd 426153 (Croatian)
+2021/tcp  open  telnet
+2022/tcp  open  http                  PRINT_SERVER WEB lvAcqQ (LevelOne FPS-3001TXU print server http config)
+2030/tcp  open  device2?
+2033/tcp  open  glogger?
+2034/tcp  open  http                  GlobespanVirata httpd (on broadband router)
+2035/tcp  open  imsldoc?
+2038/tcp  open  objectmanager?
+2040/tcp  open  lam?
+2041/tcp  open  interbase?
+2042/tcp  open  isis?
+2043/tcp  open  telnet                Cisco PIX 500 series telnetd
+2045/tcp  open  nagios-nsca           Nagios NSCA
+2046/tcp  open  rtsp                  Microsoft Windows Media Services QCubaGyLB (Portuguese)
+2047/tcp  open  netsaint              NC_Net nagios server
+2048/tcp  open  dls-monitor?
+2049/tcp  open  http                  SMC Barricade router http config
+2065/tcp  open  ftp                   Medusa Async ftpd 7q
+2068/tcp  open  imap                  Oracle imapd 3
+2099/tcp  open  h2250-annex-g?
+2100/tcp  open  rtsp                  Helix DNA Server 13
+2103/tcp  open  zephyr-clt?
+2105/tcp  open  nagios-nsca           Nagios NSCA
+2106/tcp  open  ftp                   FileZilla ftpd (No anon login)
+2107/tcp  open  msmq-mgmt?
+2111/tcp  open  telnet                Dinion IP NWC webcam telnetd
+2119/tcp  open  telnet                Orinoco AP-23704 telnetd
+2121/tcp  open  ccproxy-ftp?
+2126/tcp  open  securepath            HP StorageWorks SecurePath (unauthorized)
+2135/tcp  open  telnet                Enterasys Vertical Horizon Manager
+2144/tcp  open  lv-ffx?
+2160/tcp  open  http                  A2 httpd R
+2161/tcp  open  telnet                HP MPE/iX telnetd
+2170/tcp  open  eyetv?
+2179/tcp  open  telnet                HP Integrated Lights Out telnetd
+2190/tcp  open  http                  XBMC Web Media Manager
+2191/tcp  open  tvbus?
+2196/tcp  open  http                  Ipswitch WS_FTP http config d_ijF
+2200/tcp  open  ici?
+2222/tcp  open  smtp
+2251/tcp  open  dif-port?
+2260/tcp  open  smtp                  DeskNow smtpd 2153
+2288/tcp  open  netml?
+2301/tcp  open  compaqdiag?
+2323/tcp  open  daytime               Microsoft Windows International daytime
+2366/tcp  open  qip-login?
+2381/tcp  open  http                  Mobile Air Mouse httpd
+2382/tcp  open  vulnserver            Vulnserver
+2383/tcp  open  imap                  VisNetic MailServer imapd M
+2393/tcp  open  ms-olap1?
+2394/tcp  open  ftp                   USRobotics SureConnect ADSL router ftpd 3561524
+2399/tcp  open  http                  AN httpd mZTacuyK
+2401/tcp  open  telnet                Siemens ADSL SL2-141-I HSN2 ADSL telnetd YR-
+2492/tcp  open  http                  BMC/Marimba Transmitter 804441
+2500/tcp  open  rtsserv?
+2522/tcp  open  smtp                  SurgeMail smtpd jr
+2525/tcp  open  ms-v-worlds?
+2557/tcp  open  ftp                   Blackbox PlayStation 3 ftpd
+2601/tcp  open  gamebots              GameBots for Unreal Tournament 2004
+2602/tcp  open  ripd?
+2604/tcp  open  http                  NPAD Diagnostics httpd (SimpleHTTP O; Python oAKdG)
+2605/tcp  open  http-proxy            GoogleSharing http proxy
+2607/tcp  open  connection?
+2608/tcp  open  http-proxy            Microsoft Foundation Class httpd CAFdY
+2638/tcp  open  ssh                   OpenSSH Nsxw-aLeE (protocol 97; NCSA GSSAPI authentication patch zhSdBm)
+2701/tcp  open  sms-rcinfo?
+2702/tcp  open  sms-xfer?
+2710/tcp  open  http                  Hummingbird Document Manager httpd
+2717/tcp  open  http                  IronPort AsyncOS http config (glass 76894; Python ObFEDfpH)
+2718/tcp  open  pn-requester2?
+2725/tcp  open  msolap-ptp2?
+2800/tcp  open  acc-raid?
+2809/tcp  open  corbaloc?
+2811/tcp  open  hp-problemdiagnostics HP Problem Diagnostics
+2869/tcp  open  icslap?
+2875/tcp  open  dxmessagebase2?
+2909/tcp  open  smtp-proxy            McAfee WebShield e1000 smtp proxy EeD
+2910/tcp  open  ssh                   Bitvise WinSSHD TvN (FlowSsh QOfcoaLZn; protocol 25823; non-commercial use)
+2920/tcp  open  telnet
+2967/tcp  open  http                  RapidLogic httpd 02326310 (3Com 3CRWE454G75 WAP http config)
+2968/tcp  open  http                  Cayman DSL router http config
+2998/tcp  open  iss-realsec?
+3000/tcp  open  ppp?
+3001/tcp  open  omniback              HP Data Protector cqwUbITMe (internal build eoxJ; built on f)
+3003/tcp  open  cgms?
+3005/tcp  open  telnet                BusyBox telnetd NRhxIq
+3006/tcp  open  deslogind?
+3011/tcp  open  upnp                  MiniDLNA pWs_eIPkh0 (DLNADOC Q; UPnP iyq)
+3017/tcp  open  event_listener?
+3030/tcp  open  arepa-cas?
+3031/tcp  open  http                  Agranat-EmWeb 73.5 (Avaya G350 Media Gateway http config)
+3052/tcp  open  ident                 KVIrc fake identd
+3071/tcp  open  csd-mgmt-port?
+3077/tcp  open  http                  Monkey httpd
+3128/tcp  open  squid-http?
+3168/tcp  open  ntop-http             Ntop web interface 0Jpz- (umYboQhLj)
+3211/tcp  open  telnet                Linksys WRT54G with wifi-box.net firmware telnetd 745511860
+3221/tcp  open  gopher
+3260/tcp  open  telnet                Dynamips telnetd
+3261/tcp  open  smtp                  MailMarshal 7ZpknRTWFw
+3268/tcp  open  globalcatLDAP?
+3269/tcp  open  globalcatLDAPssl?
+3283/tcp  open  http                  Universal Devices Insteon home automation http config
+3300/tcp  open  http                  Microsoft ISA httpd
+3301/tcp  open  ftp                   Savin 8055 printer ftpd xHNoId-KN
+3306/tcp  open  http                  GoAhead WebServer (Peppercon/Paradox alarm system http config)
+3322/tcp  open  ftp                   Netcomm V300 VoIP adapter update ftpd
+3323/tcp  open  telnet                Tandberg MXP Video Conference appliance telnetd W (Site: ------)
+3324/tcp  open  active-net?
+3325/tcp  open  printer
+3333/tcp  open  sip                   (SIP end point; Status: 404 Not Found)
+3351/tcp  open  ms-sql-s              Microsoft SQL Server 2005 9.00.5000; SP4
+3367/tcp  open  ftp                   Star Micronics TSP828L printer ftpd
+3369/tcp  open  telnet                Georgia SoftWorks telnetd tjvAuwB
+3370/tcp  open  vnc-http              RealVNC xpAuaU
+3371/tcp  open  ms-pe-exe             Microsoft PE executable file
+3372/tcp  open  http                  cPanel EntropyChat httpd 2
+3389/tcp  open  http                  X-WRT Webif WAP http config
+3390/tcp  open  http                  Actiontec TR069 remote access
+3404/tcp  open  unknown
+3476/tcp  open  http                  Allegro RomPager 061
+3493/tcp  open  nut?
+3517/tcp  open  802-11-iapp?
+3527/tcp  open  beserver-msg-q?
+3546/tcp  open  netsync               Netsync 6 (Monotone VCS; key name swPpjy)
+3551/tcp  open  ftp                   Humax iHDR-5050C DVR ftpd
+3580/tcp  open  pop3                  Heimdal kerberized pop3 1nj (UCB-pop3 derived)
+3659/tcp  open  http                  Slingbox 500 httpd
+3689/tcp  open  smtp                  DavMail smtpd ROgGoBO
+3690/tcp  open  http                  Aruba router http config
+3703/tcp  open  http                  Citrix Secure Gateway http admin
+3737/tcp  open  telnet                D-Link DVA-G3170i telnetd
+3766/tcp  open  vnc                   RealVNC Personal (protocol 4.0)
+3784/tcp  open  rtsp                  Vivotek IP7131 or IP7138 webcam rtspd
+3800/tcp  open  pwgpsi?
+3801/tcp  open  http                  Pogoplug HBHTTP bKHvIzZ
+3809/tcp  open  apocd?
+3814/tcp  open  telnet
+3826/tcp  open  http                  Wusage httpd
+3827/tcp  open  http                  DD-WRT milli_httpd
+3828/tcp  open  ftp
+3851/tcp  open  telnet                GeeXboX uShare telnetd qMusQ
+3869/tcp  open  telnet                HP LaserJet telnetd
+3871/tcp  open  telnet                BusyBox telnetd 0.61 - 1.00-pre7
+3878/tcp  open  moneyworks            MoneyWorks accounting software
+3880/tcp  open  igrs?
+3889/tcp  open  http                  Embedded HTTP Server St (D-Link cF http config)
+3905/tcp  open  mupdate?
+3914/tcp  open  http                  Packeteer SkyX Accellerator ..>.3.
+3918/tcp  open  pktcablemmcops?
+3920/tcp  open  exasoftport1?
+3945/tcp  open  emcads?
+3971/tcp  open  nagios-nsca           Nagios NSCA
+3986/tcp  open  telnet                Cisco ASR 9010 router telnetd
+3995/tcp  open  iss-mgmt-ssl?
+3998/tcp  open  http                  MX4J 928723139 (JMX CruiseControl http config)
+4000/tcp  open  remoteanything?
+4001/tcp  open  telnet                Siemens HiPath PBX telnetd
+4002/tcp  open  smtp                  IMail smtpd 0648 (Storage full)
+4003/tcp  open  pxc-splr-ft?
+4004/tcp  open  ms-sql-s              Microsoft SQL Server 2000 8.00.818; SP3+ MS03-031
+4005/tcp  open  pxc-pin?
+4006/tcp  open  http                  Sitecom WL-u WAP http config
+4045/tcp  open  http                  Sandpiper Footprint http load balancer 00
+4111/tcp  open  telnet                Orinoco WAP telnetd
+4125/tcp  open  ftp                   gatling ftpd
+4126/tcp  open  ddrepl?
+4129/tcp  open  http                  Microsoft Wireless Base Station http config
+4224/tcp  open  http                  MiniShare http interface
+4242/tcp  open  vrml-multi-use?
+4279/tcp  open  http-proxy            Websense http proxy
+4321/tcp  open  rwhois?
+4343/tcp  open  sip                   (SIP end point; Status: 400 Invalid Contact information)
+4443/tcp  open  pharos?
+4444/tcp  open  netsync               Netsync 6 (Monotone VCS; key name ev-Mqdqd)
+4445/tcp  open  http                  Mono-HTTPAPI ZyKlu (Beagle desktop search)
+4446/tcp  open  n1-fwp?
+4449/tcp  open  http                  micro_httpd (Buffalo WLI-TX4-G54HP WAP http config)
+4550/tcp  open  gds-adppiw-db?
+4567/tcp  open  http                  VMware ESX 4.0 Server httpd
+4662/tcp  open  telnet                Patton SmartNode 4638 VoIP adapter telnetd
+4848/tcp  open  appserv-http?
+4899/tcp  open  dict                  Serpento dictd
+4900/tcp  open  hfcs?
+4998/tcp  open  telnet                APC PDU/UPS devices or Windows CE telnetd
+5000/tcp  open  http                  HP JetDirect printer http config
+5001/tcp  open  commplex-link?
+5002/tcp  open  ftp                   VSE ftpd CbMAhBR
+5003/tcp  open  http                  Sandpiper Footprint http load balancer 5933460
+5004/tcp  open  avt-profile-1?
+5009/tcp  open  http                  IBM Tivoli Application Manager httpd gqHB (build ID: jTMxaEvcy; build date: +)
+5030/tcp  open  surfpass?
+5033/tcp  open  jtnetd-server?
+5050/tcp  open  http                  MONyog MySQL http admin
+5051/tcp  open  ssh                   (protocol 56752330)
+5054/tcp  open  smtp
+5060/tcp  open  sip?
+5061/tcp  open  sip-tls?
+5080/tcp  open  telnet                Xerox Phaser 4400DX printer
+5087/tcp  open  http                  3ware 3DM2 Serial RAID http config 54089071
+5100/tcp  open  ed2klink              ED2KLink Server
+5101/tcp  open  http                  ALPHA-WebServer MPeEYWFDj
+5102/tcp  open  admeng?
+5120/tcp  open  telnet                FORE Systems ES-3810
+5190/tcp  open  ftp                   Cerberus FTP Server (Personal Edition; Unregistered)
+5200/tcp  open  targus-getdata?
+5214/tcp  open  unknown
+5221/tcp  open  http                  Topfield HDPVR satellite decoder http config
+5222/tcp  open  upnp                  Portable SDK for UPnP devices HAV (Linux kMSqmv; UPnP 939)
+5225/tcp  open  hp-server?
+5226/tcp  open  ftp                   Synology CubeStation ftpd
+5269/tcp  open  xmpp-server?
+5280/tcp  open  xmpp-bosh?
+5298/tcp  open  lmtp                  Cyrus lmtpd Murder iUPu
+5357/tcp  open  backdoor              Jeem backdoor (**BACKDOOR**)
+5405/tcp  open  pcduo?
+5414/tcp  open  http                  DTA310 VoIP router http config
+5431/tcp  open  park-agent?
+5432/tcp  open  ftp
+5440/tcp  open  rtsp                  Mango DSP AVS Raven-M video server rtspd
+5500/tcp  open  http                  Sony VloIZT LocationFree TV http interface BSdvP
+5510/tcp  open  http                  Western Digital My Book http config
+5544/tcp  open  telnet                Nortel Networks telnetd (Baystack TCn; Versions: H:eTI)
+5550/tcp  open  sdadmind?
+5555/tcp  open  freeciv?
+5560/tcp  open  smtp                  Microsoft Exchange 2010 smtpd (not available)
+5566/tcp  open  http                  VMware ESX 4.0 Server httpd
+5631/tcp  open  pop3                  ArGoSoft Pro 4361684
+5633/tcp  open  beorl?
+5666/tcp  open  http                  Packet8 BPA430 VoIP phone http config
+5678/tcp  open  ftp                   Golden ftpd DldDbmxQr
+5679/tcp  open  activesync?
+5718/tcp  open  telnet                Nortel Gbe switch telnetd
+5730/tcp  open  upnp                  MiniUPnP
+5800/tcp  open  ftp                   zFTPServer TKhc build 7686
+5801/tcp  open  vnc-http-1?
+5802/tcp  open  telnet                USRobotics TotalControl NetServer 8/16 telnetd
+5810/tcp  open  directconnect         Direct Connect P2P (User: -uISwM)
+5811/tcp  open  unknown
+5815/tcp  open  ms-sql-s              Microsoft SQL Server 2005 9.00.1406
+5822/tcp  open  ssh                   (protocol 941)
+5825/tcp  open  unknown
+5850/tcp  open  unknown
+5859/tcp  open  telnet                NRG maintenance telnetd
+5862/tcp  open  http                  DVBViewer digital TV viewer httpd
+5877/tcp  open  resvc                 Microsoft Exchange routing server 0XHOhw
+5900/tcp  open  vnc?
+5901/tcp  open  http                  SoftPerfect Bandwidth Manager httpd
+5902/tcp  open  http                  Fortinet FortiGate 50B or FortiWifi 60C or 80C firewall http config
+5903/tcp  open  telnet                Telos Omnia-6EX audio processor telnetd
+5904/tcp  open  ag-swim?
+5906/tcp  open  ms-sql-s              Microsoft SQL Server 2000 8.00.2055; SP4+ MS09-004
+5907/tcp  open  telnet
+5910/tcp  open  ssl/imap              Cyrus imapd
+5911/tcp  open  http                  Netgear FR-series firewall router http config
+5915/tcp  open  ftp                   Internet Rex ftpd 0YrPzYSsb (SLTwJVc/)
+5922/tcp  open  unknown
+5925/tcp  open  telnet                Dedicated Micros Digital Sprite 2 DVR telnetd
+5950/tcp  open  irc                   ircu ircd
+5952/tcp  open  unknown
+5959/tcp  open  webdav                Tonido WebDAV
+5960/tcp  open  ftp                   Apache mod_ftpd QudNEqLn
+5961/tcp  open  http                  micro_httpd (Linksys WRT54GXv2 http config)
+5962/tcp  open  http                  BQTWWW NpwsDJ_
+5963/tcp  open  http                  GNUMP3d 3005647
+5985/tcp  open  telnet                APC PDU/UPS devices or Windows CE telnetd
+5986/tcp  open  http                  Mongoose httpd
+5987/tcp  open  wbem-rmi?
+5988/tcp  open  telnet                Samsung printer telnetd
+5989/tcp  open  wbem-https?
+5998/tcp  open  http                  LuCId-HTTPd 331
+5999/tcp  open  http                  Cisco WebVPN http config
+6000/tcp  open  X11?
+6001/tcp  open  finger                Linux fingerd
+6002/tcp  open  http                  D-Link web camera http config
+6003/tcp  open  X11:3?
+6004/tcp  open  smtp-proxy            Ikarus MailWall smtp-proxy
+6005/tcp  open  X11:5?
+6006/tcp  open  http                  Google Search Appliance httpd
+6007/tcp  open  ftp                   Merit Megatouch game device ftpd 780
+6009/tcp  open  X11:9?
+6025/tcp  open  ftp                   APC ftp server
+6059/tcp  open  X11:59?
+6100/tcp  open  synchronet-db?
+6101/tcp  open  http                  MX4J cVTx (OpenNMS http admin)
+6106/tcp  open  bzr                   Bazaar VCS bzr serve
+6112/tcp  open  http-proxy            DeleGate proxy 413779158
+6123/tcp  open  telnet                HP LaserJet telnetd
+6129/tcp  open  http                  Comtrend PowerGrid vMygrdolG Ethernet adapter http config
+6156/tcp  open  http                  Dreambox streaming audio httpd
+6346/tcp  open  smtp-proxy            ASSP Anti-Spam Proxy smtp proxy
+6389/tcp  open  kazaa-http            giFTed FastTrack P2P client 7401 (network: EfNT)
+6502/tcp  open  giop
+6510/tcp  open  pop3                  Dovecot DirectAdmin pop3d
+6543/tcp  open  mythtv?
+6547/tcp  open  rtsp                  Avtech MPEG4 DVR control rtspd
+6565/tcp  open  unknown
+6566/tcp  open  sane-port?
+6567/tcp  open  esp?
+6580/tcp  open  parsec-master?
+6646/tcp  open  irc                   Dancer ircd
+6666/tcp  open  irc?
+6667/tcp  open  http                  Transmission BitTorrent management httpd (unauthorized)
+6668/tcp  open  irc?
+6669/tcp  open  hp-logic-analyzer     HP 1662C logic analyzer
+6689/tcp  open  tsa?
+6692/tcp  open  ftp                   ProFTPD
+6699/tcp  open  napster?
+6779/tcp  open  unknown
+6788/tcp  open  unreal-media          Unreal Media Server
+6789/tcp  open  http                  VMware ESX Server httpd
+6792/tcp  open  imap                  GNU Mailutils imapd
+6839/tcp  open  http                  Apache httpd 9.7.Ycit (..B)
+6881/tcp  open  bittorrent-tracker?
+6901/tcp  open  jetstream?
+6969/tcp  open  acmsoda?
+7000/tcp  open  telnet                Epson /..6 print server telnetd
+7001/tcp  open  telnet-proxy          Blue Coat Shell proxy
+7002/tcp  open  http                  Galty Technologies GaltyExplorer httpd
+7004/tcp  open  ftp                   Blackbox PlayStation 3 ftpd
+7007/tcp  open  nntp                  Leafnode NNTPd 8xwzjNB
+7019/tcp  open  doceri-ctl?
+7025/tcp  open  vmsvc-2?
+7070/tcp  open  nntp                  Mailtraq nntpd 6937890
+7100/tcp  open  font-service?
+7103/tcp  open  unknown
+7106/tcp  open  hp-logic-analyzer     HP 1662C logic analyzer
+7200/tcp  open  fodms?
+7201/tcp  open  http-proxy            I2P https proxy
+7402/tcp  open  http                  Citrix Metaframe ICA Browser
+7435/tcp  open  http                  MiniShare http interface
+7443/tcp  open  telnet
+7496/tcp  open  unknown
+7512/tcp  open  unknown
+7625/tcp  open  telnet                Huawei telnetd
+7627/tcp  open  soap-http?
+7676/tcp  open  imap                  Merak Mail Server imapd 4EBzEh
+7741/tcp  open  smtp                  NTMail smtpd 901590
+7777/tcp  open  telnet                Netgear FVS318 router telnetd
+7778/tcp  open  interwise?
+7800/tcp  open  asr?
+7911/tcp  open  pop3                  DEC OpenVMS MultiNet pop3d S+
+7920/tcp  open  http                  Leadtek BVA8055 VoIP adapter http config
+7921/tcp  open  telnet                Dedicated Micros Digital Sprite 2 DVR telnetd
+7937/tcp  open  nsrexecd?
+7938/tcp  open  http                  HighPoint Raidman web config http 7714483
+7999/tcp  open  ftp                   TwoFTPd
+8000/tcp  open  winagents-hyperconf   WinAgents HyperConf configuration management
+8001/tcp  open  ftp
+8002/tcp  open  telnet                Arris tm602g cable modem telnetd (console in use)
+8007/tcp  open  upnp                  Virata-EmWeb 5.97 (ActionTec DSL UPnP; UPnP 0426904)
+8008/tcp  open  smtp                  Postfix smtpd 997
+8009/tcp  open  http                  MiniShare http interface
+8010/tcp  open  telnet
+8011/tcp  open  irc                   Dancer ircd
+8021/tcp  open  http                  REALbasic 2008 example httpd
+8022/tcp  open  http                  Embedded HTTP Server (Linksys RVL200 VPN router http config)
+8031/tcp  open  unknown
+8042/tcp  open  fs-agent?
+8045/tcp  open  unknown
+8080/tcp  open  http-proxy?
+8081/tcp  open  blackice-icecap?
+8082/tcp  open  blackice-alerts?
+8083/tcp  open  telnet
+8084/tcp  open  http                  Canon LBP-2000 printer httpd
+8085/tcp  open  telnet                DrayTek Vigor ADSL router telnetd
+8086/tcp  open  smtp-proxy            602LAN Suite smtpd
+8087/tcp  open  simplifymedia?
+8088/tcp  open  radan-http?
+8089/tcp  open  unknown
+8090/tcp  open  opsmessaging?
+8093/tcp  open  unknown
+8099/tcp  open  unknown
+8100/tcp  open  smtp                  OpenSMTPD
+8180/tcp  open  telnet                GlobespanVirata telnetd isX-PpAh
+8181/tcp  open  http                  xbtt bittorrent tracker httpd
+8192/tcp  open  pop2                  UW POP2 server HYpgEn
+8193/tcp  open  sophos?
+8194/tcp  open  sophos?
+8200/tcp  open  giop
+8222/tcp  open  http                  SAP Internet DB httpd 5066883
+8254/tcp  open  unknown
+8290/tcp  open  upnp                  Portable SDK for UPnP devices R (Linux wmcXk; UPnP 166)
+8291/tcp  open  wincomm               Windows Communicator
+8292/tcp  open  http                  Barracuda Embedded Web Server
+8300/tcp  open  ftp
+8333/tcp  open  telnet                Club-Internet telnetd 0.61 - 1.00-pre7
+8383/tcp  open  telnet                APC PDU/UPS devices or Windows CE telnetd
+8400/tcp  open  http                  Asterisk JZKzlzT
+8402/tcp  open  http                  WindWeb 41 (Xerox 8830 printer/plotter)
+8443/tcp  open  https-alt?
+8500/tcp  open  fmtp?
+8600/tcp  open  http                  Linksys WRTM router http config
+8649/tcp  open  unknown
+8651/tcp  open  ftp                   Blackjumbodog FTPd .<_
+8652/tcp  open  http                  Aladdin HASP license manager 547770587
+8654/tcp  open  unknown
+8701/tcp  open  http-proxy            Cisco NETLab http proxy uhweUW
+8800/tcp  open  http-proxy            UserGate http proxy
+8873/tcp  open  dxspider?
+8888/tcp  open  smtp                  XWall smtpd 8S+
+8899/tcp  open  smtp                  Lotus Domino smtpd OiLIGfWgw (Italian)
+8994/tcp  open  http                  CAMEO httpd (D-Link DAP-1360 WAP http config)
+9000/tcp  open  http                  HP/Compaq Integrated Lights-Out http config
+9001/tcp  open  tor-orport?
+9002/tcp  open  pop3                  ArGoSoft Pro 791051
+9003/tcp  open  telnet                Siemens SANTIS WAP telnetd
+9009/tcp  open  telnet                Precidia serial2ethernet gateway telnetd (model ZDHEp)
+9010/tcp  open  http                  POPFile web control interface
+9011/tcp  open  telnet                Foxgate S9816 switch telnetd
+9040/tcp  open  ftp                   FirstClass FTP server 7YPgwgz-t
+9050/tcp  open  http-proxy            Citrix Application Firewall
+9071/tcp  open  unknown
+9080/tcp  open  http                  SparkLAN WX-2211A wireless router http config 00896
+9081/tcp  open  upnp                  SuperMicro IPMI UPnP
+9090/tcp  open  ftp                   Alcatel Litespan-2000 PBX ftpd
+9091/tcp  open  telnet                Apache Felix remote console
+9099/tcp  open  netstat               OpenVMS netstatd (PSM 880427; AlphaServer 7926; OpenVMS AXP 5612691)
+9100/tcp  open  jetdirect?
+9101/tcp  open  jetdirect?
+9102/tcp  open  jetdirect?
+9103/tcp  open  jetdirect?
+9110/tcp  open  http                  CAMEO httpd (D-Link DAP-1160 WAP http config)
+9111/tcp  open  DragonIDSConsole?
+9200/tcp  open  nntp                  Cyrus nntpd eNrqIwN (posting ok)
+9207/tcp  open  http                  Microsoft ISA httpd (Spanish)
+9220/tcp  open  lcdproc               LCDProc screen interface daemon
+9290/tcp  open  unknown
+9415/tcp  open  unknown
+9418/tcp  open  git?
+9485/tcp  open  unknown
+9500/tcp  open  bittorrent-tracker    MLDonkey multi-network P2P client
+9502/tcp  open  mu-game               Webzen MU Online role-playing game server
+9503/tcp  open  telnet                Buffalo LinkStation HS-DHCL series NAS device
+9535/tcp  open  man?
+9575/tcp  open  pop3                  SCO pop3d ymOPcE
+9593/tcp  open  telnet                Sagem D-BOX2 telnetd (linux kernel UdAbgHRZ)
+9594/tcp  open  ftp                   EvolutionX ftpd
+9595/tcp  open  telnet
+9618/tcp  open  http                  alevtd for videotext pages httpd 03111
+9666/tcp  open  http                  Actiontec TR069 remote access
+9876/tcp  open  telnet                APC PDU/UPS devices or Windows CE telnetd
+9877/tcp  open  http                  Sony E_kZ LocationFree TV http interface Q
+9878/tcp  open  login                 Ataman ATRLS rlogind
+9898/tcp  open  http                  American Dynamics EDVR security recorder
+9900/tcp  open  http                  netTALK Duo http config
+9917/tcp  open  unknown
+9929/tcp  open  nping-echo?
+9943/tcp  open  ftp                   bsd-ftpd
+9944/tcp  open  unknown
+9968/tcp  open  upnp                  D-Link DIR-Oi WAP UPnP 74079 (UPnP 70851)
+9998/tcp  open  distinct32?
+9999/tcp  open  abyss?
+10000/tcp open  http                  TRENDnet TV-IP301 webcam display httpd
+10001/tcp open  scp-config?
+10002/tcp open  documentum?
+10003/tcp open  http                  Cinema 4D Renderer http interface 13670969
+10004/tcp open  ftp                   Overland Storage Neo2000 ftpd
+10009/tcp open  swdtp-sv?
+10010/tcp open  rxapi?
+10012/tcp open  ftp                   Amoks PlayStation Portable ftpd
+10024/tcp open  unknown
+10025/tcp open  unknown
+10082/tcp open  telnet                APC PDU/UPS devices or Windows CE telnetd
+10180/tcp open  unknown
+10215/tcp open  http                  Aimetis InfoService httpd LTm
+10243/tcp open  pop3                  Microsoft Exchange 2003 pop3d 51192451 (Spanish)
+10566/tcp open  unknown
+10616/tcp open  unknown
+10617/tcp open  login                 Ataman ATRLS rlogind
+10621/tcp open  oracle-mts            Oracle MTS Recovery Service
+10626/tcp open  smtp                  Postfix smtpd
+10628/tcp open  imap                  TeamXchange imapd
+10629/tcp open  http                  D-Link DVS-4088S, DVS-5088S, or DVG-7062S VoIP gateway http config
+10778/tcp open  unknown
+11110/tcp open  ftp                   ProFTPD (German)
+11111/tcp open  vce?
+11967/tcp open  http                  Ipswitch WhatsUp Gold 4tLlG
+12000/tcp open  telnet                LANCOM L-54g Wireless router telnetd
+12174/tcp open  unknown
+12265/tcp open  telnet
+12345/tcp open  telnet                Huawei telnetd
+13456/tcp open  ftp                   NetBSD lukemftpd
+13722/tcp open  http                  Jablotron m alarm http control
+13782/tcp open  smtp                  Winmail smtpd
+13783/tcp open  ovhcheckout           OVH OvhCheckOut LZerpMWi
+14000/tcp open  telnet                LinuxNode telnetd 6357
+14238/tcp open  http-proxy            Perl HTTP::Proxy 521098
+14441/tcp open  http                  mini_httpd (Linksys RVS4000 router)
+14442/tcp open  telnet                Nortel Layer 2/3 Gigabit Ethernet switch for IBM BladeCenter
+15000/tcp open  activefax             ActFax Communication ActiveFax (German)
+15002/tcp open  pop3                  WinGate pop3d
+15003/tcp open  telnet                Netgear WG102 WAP telnetd (disabled)
+15004/tcp open  http-proxy            HTTHost TCP over HTTP tunneling proxy
+15660/tcp open  bex-xr?
+15742/tcp open  http                  Oracle XDB httpd C.....^..
+16000/tcp open  telnet                BreezeCOM telnetd
+16001/tcp open  fmsascon?
+16012/tcp open  telnet
+16016/tcp open  unknown
+16018/tcp open  unknown
+16080/tcp open  ftp                   NetWare NWFTPD
+16113/tcp open  unknown
+16992/tcp open  smtp                  Gruponet mail appliance smtpd /3
+16993/tcp open  upnp                  Platinum upnpd oCLUnv (XBMC; DLNADOC AqZFxgz_; UPnP sFN_EDdA)
+17877/tcp open  sip                   3CX VoIP PBX
+17988/tcp open  unknown
+18040/tcp open  telnet                HP Integrated Lights Out telnetd
+18101/tcp open  ups                   Cyber Power PowerPanelPlus UPS Server
+18988/tcp open  rethinkdb-client      RethinkDB client driver 1.5.2 or earlier
+19101/tcp open  smtp                  Xserve smtpd
+19283/tcp open  smtp                  DvISE PostMan smtpd 2
+19315/tcp open  ftp                   GNU Inetutils FTPd Tkw
+19350/tcp open  ftp                   Gene6 ftpd qPmz build 0
+19780/tcp open  sip                   (SIP end point; Status: 200 OK)
+19801/tcp open  upnp                  Linksys WVC54GC webcam UPnP (UPnP 0540; Intel UPnP 057415309)
+19842/tcp open  t-doc-2000            Getinge T-DOC 2000 hospital instrument management system
+20000/tcp open  http                  Virata-EmWeb 46 (HP PhotoSmart/Deskjet printer http config)
+20005/tcp open  http                  BBC httpd 7sQQ (HP OpenView ITO agent - Coda 8xzaPwn)
+20031/tcp open  pop3                  Atmail pop3d
+20221/tcp open  ftp                   vsftpd (broken: both local and anonymous access disabled!)
+20222/tcp open  http                  PHP built-in httpd 5.4.0 or later
+20828/tcp open  http                  Citrix Access Gateway firewall http config
+21571/tcp open  http                  Linksys WRT54G WAP http config (Wireless admin disabled)
+22939/tcp open  sip                   3CX VoIP PBX
+23502/tcp open  http                  Apt-cacher httpd ixPUdkcwT
+24444/tcp open  unknown
+24800/tcp open  ssh                   (protocol 0275477)
+25734/tcp open  unknown
+25735/tcp open  http                  BarracudaHTTP 65940642 (Barracuda Networks Spam & Virus Firewall http config)
+26214/tcp open  imap                  Lotus Domino imapd (Unable to connect)
+27000/tcp open  flexlm0?
+27352/tcp open  unknown
+27353/tcp open  http                  AEG Powersolutions UPS View http viewer
+27355/tcp open  frozen-bubble         Frozen Bubble game server 4558 (language: an)
+27356/tcp open  unknown
+27715/tcp open  http                  Virata-EmWeb 143278 (HP LaserJet http config)
+28201/tcp open  unknown
+30000/tcp open  ndmps?
+30718/tcp open  unknown
+30951/tcp open  unknown
+31038/tcp open  unknown
+31337/tcp open  boinc                 Boinc GUI RPC port (Unauthorized)
+32768/tcp open  imap
+32769/tcp open  filenet-rpc?
+32770/tcp open  http                  Teradici PCoIP remote management http config
+32771/tcp open  sometimes-rpc5?
+32772/tcp open  sometimes-rpc7?
+32773/tcp open  ftp                   Plan 9 ftpd
+32774/tcp open  http                  3Com Baseline 2816 switch http config
+32775/tcp open  ftp                   inLighten iBox digital signage ftpd sAb
+32776/tcp open  ssh                   (protocol 606401)
+32777/tcp open  http                  Cisco switch/router http config
+32778/tcp open  sometimes-rpc19?
+32779/tcp open  telnet                Airaya WAP config telnetd
+32780/tcp open  sometimes-rpc23?
+32781/tcp open  unknown
+32782/tcp open  http                  Mbedthis-Appweb (Thomson Technicolor broadband router http admin)
+32783/tcp open  unknown
+32784/tcp open  unknown
+32785/tcp open  unknown
+33354/tcp open  unknown
+33899/tcp open  http                  Ricoh Aficio MP C4000 http config
+34571/tcp open  ftp
+34572/tcp open  ftp                   ActiveFax ftpd 97406 build 7
+34573/tcp open  unknown
+35500/tcp open  smtp                  hMailServer
+38292/tcp open  landesk-cba?
+40193/tcp open  ftp                   OpenVMS ftpd 4608
+40911/tcp open  unknown
+41511/tcp open  telnet                PC Telnetd 41104964
+42510/tcp open  http                  VMware Server http config
+44176/tcp open  http                  Kerio WinRoute Pro firewall http config
+44442/tcp open  smtp                  Smap (from firewall toolkit)
+44443/tcp open  bprd                  Veritas Netbackup (refused)
+44501/tcp open  gopher                Windows gopherd
+45100/tcp open  telnet                FirstClass telnetd (CLI disabled)
+48080/tcp open  http-proxy            WebWasher filtering proxy (German)
+49152/tcp open  unknown
+49153/tcp open  http                  Google Web Toolkit httpd
+49154/tcp open  http                  Ericsson MD Evolution PBX http config
+49155/tcp open  lmtp                  Cyrus lmtpd Murder uMLCpkJW
+49156/tcp open  unknown
+49157/tcp open  unknown
+49158/tcp open  smtp                  Lotus Domino smtpd 3hcK
+49159/tcp open  http                  Oracle Application Server 10g httpd 034179 (Oracle Containers for J2EE)
+49160/tcp open  http                  ZyXEL ZyWALL Y+eY-y http config
+49161/tcp open  tandem-print          Sharp printer tandem printing
+49163/tcp open  http                  SensaTronics TempTrax Digital Thermometer
+49165/tcp open  telnet                ISOS telnetd mvzpH SRiLeK
+49167/tcp open  ftp
+49175/tcp open  unknown
+49176/tcp open  unknown
+49400/tcp open  http                  ELOG blog httpd DeqAA
+49999/tcp open  unknown
+50000/tcp open  bittorrent-tracker    MLDonkey multi-network P2P client
+50001/tcp open  smtp                  Lotus Domino smtpd lWw Beta a
+50002/tcp open  iiimsf?
+50003/tcp open  http                  SNMP Research DR-Web http config zNaWr
+50006/tcp open  imap                  Microsoft Exchange 2003 imapd 48328 (German)
+50300/tcp open  http-proxy            I2P http proxy
+50389/tcp open  http                  Microsoft Cassini httpd IX-ITo
+50500/tcp open  telnet                Pocket CMD telnetd
+50636/tcp open  unknown
+50800/tcp open  http                  Embedded HTTP Server (Linksys RVL200 VPN router http config)
+51103/tcp open  http                  Acme.Serve 8-Lmf c (APC Powerchute)
+51493/tcp open  http                  ShadowBot 3438682 (HP Opsware)
+52673/tcp open  pop3-proxy            Mirapoint pop3 proxy BoIH
+52822/tcp open  http                  Apache WebSnmp module 0896399
+52848/tcp open  unknown
+52869/tcp open  http                  Embedded HTTP Server (Netgear ProSafe firewall http config)
+54045/tcp open  upnp                  Conexant-EmWeb 3 (Billion ADSL/WAP/VoIP router UPnP; UPnP 911045148)
+54328/tcp open  unknown
+55055/tcp open  ftp                   Gene6 ftpd 49 beta 3
+55056/tcp open  unknown
+55555/tcp open  unknown
+55600/tcp open  ftp                   CrossFTP java ftpd
+56737/tcp open  telnet                Synology DiskStation 1512+ NAS telnetd
+56738/tcp open  unknown
+57294/tcp open  unknown
+57797/tcp open  ssl/vmware-auth       VMware Authentication Daemon 2Ej
+58080/tcp open  http                  Cherokee httpd PjsOasdkH
+60020/tcp open  http                  DNews Web Based Manager
+60443/tcp open  unknown
+61532/tcp open  telnet
+61900/tcp open  unknown
+62078/tcp open  pop3                  Mirapoint RazorGate pop3d 3
+63331/tcp open  unknown
+64623/tcp open  unknown
+64680/tcp open  unknown
+65000/tcp open  smtp                  VaMailArmor smtpd 2
+65129/tcp open  http                  ControlByWeb WebRelay-Quad http admin
+65389/tcp open  http                  quark hDME-v
+9 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1-TCP:V=7.95%I=7%D=8/5%Time=6A737066%P=x86_64-pc-linux-gnu%r(NULL,4
+SF:1,"550\x2012345\x200000000000000000000000000000000000000000000000000000
+SF:000")%r(GetRequest,41,"550\x2012345\x2000000000000000000000000000000000
+SF:00000000000000000000000")%r(Help,41,"550\x2012345\x20000000000000000000
+SF:0000000000000000000000000000000000000")%r(GenericLines,41,"550\x2012345
+SF:\x200000000000000000000000000000000000000000000000000000000")%r(HTTPOpt
+SF:ions,41,"550\x2012345\x200000000000000000000000000000000000000000000000
+SF:000000000")%r(RTSPRequest,41,"550\x2012345\x200000000000000000000000000
+SF:000000000000000000000000000000")%r(RPCCheck,41,"550\x2012345\x200000000
+SF:000000000000000000000000000000000000000000000000")%r(DNSVersionBindReqT
+SF:CP,41,"550\x2012345\x20000000000000000000000000000000000000000000000000
+SF:0000000")%r(DNSStatusRequestTCP,41,"550\x2012345\x200000000000000000000
+SF:000000000000000000000000000000000000")%r(SSLSessionReq,41,"550\x2012345
+SF:\x200000000000000000000000000000000000000000000000000000000")%r(Termina
+SF:lServerCookie,41,"550\x2012345\x200000000000000000000000000000000000000
+SF:000000000000000000")%r(TLSSessionReq,41,"550\x2012345\x2000000000000000
+SF:00000000000000000000000000000000000000000")%r(Kerberos,41,"550\x2012345
+SF:\x200000000000000000000000000000000000000000000000000000000")%r(SMBProg
+SF:Neg,41,"550\x2012345\x2000000000000000000000000000000000000000000000000
+SF:00000000")%r(X11Probe,41,"550\x2012345\x2000000000000000000000000000000
+SF:00000000000000000000000000")%r(FourOhFourRequest,41,"550\x2012345\x2000
+SF:00000000000000000000000000000000000000000000000000000")%r(LPDString,41,
+SF:"550\x2012345\x20000000000000000000000000000000000000000000000000000000
+SF:0")%r(LDAPSearchReq,41,"550\x2012345\x200000000000000000000000000000000
+SF:000000000000000000000000")%r(LDAPBindReq,41,"550\x2012345\x200000000000
+SF:000000000000000000000000000000000000000000000")%r(SIPOptions,41,"550\x2
+SF:012345\x200000000000000000000000000000000000000000000000000000000")%r(L
+SF:ANDesk-RC,41,"550\x2012345\x2000000000000000000000000000000000000000000
+SF:00000000000000")%r(TerminalServer,41,"550\x2012345\x2000000000000000000
+SF:00000000000000000000000000000000000000");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3-TCP:V=7.95%I=7%D=8/5%Time=6A73706B%P=x86_64-pc-linux-gnu%r(NULL,4
+SF:1,"550\x2012345\x200000000000000000000000000000000000000000000000000000
+SF:000")%r(GenericLines,41,"550\x2012345\x20000000000000000000000000000000
+SF:0000000000000000000000000")%r(GetRequest,41,"550\x2012345\x200000000000
+SF:000000000000000000000000000000000000000000000")%r(HTTPOptions,41,"550\x
+SF:2012345\x200000000000000000000000000000000000000000000000000000000")%r(
+SF:RTSPRequest,41,"550\x2012345\x20000000000000000000000000000000000000000
+SF:0000000000000000")%r(RPCCheck,41,"550\x2012345\x20000000000000000000000
+SF:0000000000000000000000000000000000")%r(DNSVersionBindReqTCP,41,"550\x20
+SF:12345\x200000000000000000000000000000000000000000000000000000000")%r(DN
+SF:SStatusRequestTCP,41,"550\x2012345\x20000000000000000000000000000000000
+SF:0000000000000000000000")%r(Help,41,"550\x2012345\x200000000000000000000
+SF:000000000000000000000000000000000000")%r(SSLSessionReq,41,"550\x2012345
+SF:\x200000000000000000000000000000000000000000000000000000000")%r(Termina
+SF:lServerCookie,41,"550\x2012345\x200000000000000000000000000000000000000
+SF:000000000000000000")%r(TLSSessionReq,41,"550\x2012345\x2000000000000000
+SF:00000000000000000000000000000000000000000")%r(Kerberos,41,"550\x2012345
+SF:\x200000000000000000000000000000000000000000000000000000000")%r(SMBProg
+SF:Neg,41,"550\x2012345\x2000000000000000000000000000000000000000000000000
+SF:00000000")%r(X11Probe,41,"550\x2012345\x2000000000000000000000000000000
+SF:00000000000000000000000000")%r(FourOhFourRequest,41,"550\x2012345\x2000
+SF:00000000000000000000000000000000000000000000000000000")%r(LPDString,41,
+SF:"550\x2012345\x20000000000000000000000000000000000000000000000000000000
+SF:0")%r(LDAPSearchReq,41,"550\x2012345\x200000000000000000000000000000000
+SF:000000000000000000000000")%r(LDAPBindReq,41,"550\x2012345\x200000000000
+SF:000000000000000000000000000000000000000000000")%r(SIPOptions,41,"550\x2
+SF:012345\x200000000000000000000000000000000000000000000000000000000")%r(L
+SF:ANDesk-RC,41,"550\x2012345\x2000000000000000000000000000000000000000000
+SF:00000000000000")%r(TerminalServer,41,"550\x2012345\x2000000000000000000
+SF:00000000000000000000000000000000000000");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port4-TCP:V=7.95%I=7%D=8/5%Time=6A737066%P=x86_64-pc-linux-gnu%r(NULL,4
+SF:1,"550\x2012345\x200000000000000000000000000000000000000000000000000000
+SF:000")%r(GenericLines,41,"550\x2012345\x20000000000000000000000000000000
+SF:0000000000000000000000000")%r(GetRequest,41,"550\x2012345\x200000000000
+SF:000000000000000000000000000000000000000000000")%r(HTTPOptions,41,"550\x
+SF:2012345\x200000000000000000000000000000000000000000000000000000000")%r(
+SF:RTSPRequest,41,"550\x2012345\x20000000000000000000000000000000000000000
+SF:0000000000000000")%r(RPCCheck,41,"550\x2012345\x20000000000000000000000
+SF:0000000000000000000000000000000000")%r(DNSVersionBindReqTCP,41,"550\x20
+SF:12345\x200000000000000000000000000000000000000000000000000000000")%r(DN
+SF:SStatusRequestTCP,41,"550\x2012345\x20000000000000000000000000000000000
+SF:0000000000000000000000")%r(Help,41,"550\x2012345\x200000000000000000000
+SF:000000000000000000000000000000000000")%r(SSLSessionReq,41,"550\x2012345
+SF:\x200000000000000000000000000000000000000000000000000000000")%r(Termina
+SF:lServerCookie,41,"550\x2012345\x200000000000000000000000000000000000000
+SF:000000000000000000")%r(TLSSessionReq,41,"550\x2012345\x2000000000000000
+SF:00000000000000000000000000000000000000000")%r(Kerberos,41,"550\x2012345
+SF:\x200000000000000000000000000000000000000000000000000000000")%r(SMBProg
+SF:Neg,41,"550\x2012345\x2000000000000000000000000000000000000000000000000
+SF:00000000")%r(X11Probe,41,"550\x2012345\x2000000000000000000000000000000
+SF:00000000000000000000000000")%r(FourOhFourRequest,41,"550\x2012345\x2000
+SF:00000000000000000000000000000000000000000000000000000")%r(LPDString,41,
+SF:"550\x2012345\x20000000000000000000000000000000000000000000000000000000
+SF:0")%r(LDAPSearchReq,41,"550\x2012345\x200000000000000000000000000000000
+SF:000000000000000000000000")%r(LDAPBindReq,41,"550\x2012345\x200000000000
+SF:000000000000000000000000000000000000000000000")%r(SIPOptions,41,"550\x2
+SF:012345\x200000000000000000000000000000000000000000000000000000000")%r(L
+SF:ANDesk-RC,41,"550\x2012345\x2000000000000000000000000000000000000000000
+SF:00000000000000")%r(TerminalServer,41,"550\x2012345\x2000000000000000000
+SF:00000000000000000000000000000000000000");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port6-TCP:V=7.95%I=7%D=8/5%Time=6A737066%P=x86_64-pc-linux-gnu%r(NULL,4
+SF:1,"550\x2012345\x200fffffffffffffffffffffffffffffffffffffffffffffffffff
+SF:f00")%r(GenericLines,41,"550\x2012345\x200fffffffffffffffffffffffffffff
+SF:fffffffffffffffffffffff00")%r(GetRequest,41,"550\x2012345\x200fffffffff
+SF:fffffffffffffffffffffffffffffffffffffffffff00")%r(HTTPOptions,41,"550\x
+SF:2012345\x200ffffffffffffffffffffffffffffffffffffffffffffffffffff00")%r(
+SF:RTSPRequest,41,"550\x2012345\x200ffffffffffffffffffffffffffffffffffffff
+SF:ffffffffffffff00")%r(RPCCheck,41,"550\x2012345\x200ffffffffffffffffffff
+SF:ffffffffffffffffffffffffffffffff00")%r(DNSVersionBindReqTCP,41,"550\x20
+SF:12345\x200ffffffffffffffffffffffffffffffffffffffffffffffffffff00")%r(DN
+SF:SStatusRequestTCP,41,"550\x2012345\x200ffffffffffffffffffffffffffffffff
+SF:ffffffffffffffffffff00")%r(Help,41,"550\x2012345\x200ffffffffffffffffff
+SF:ffffffffffffffffffffffffffffffffff00")%r(SSLSessionReq,41,"550\x2012345
+SF:\x200ffffffffffffffffffffffffffffffffffffffffffffffffffff00")%r(Termina
+SF:lServerCookie,41,"550\x2012345\x200ffffffffffffffffffffffffffffffffffff
+SF:ffffffffffffffff00")%r(TLSSessionReq,41,"550\x2012345\x200fffffffffffff
+SF:fffffffffffffffffffffffffffffffffffffff00")%r(Kerberos,41,"550\x2012345
+SF:\x200ffffffffffffffffffffffffffffffffffffffffffffffffffff00")%r(SMBProg
+SF:Neg,41,"550\x2012345\x200ffffffffffffffffffffffffffffffffffffffffffffff
+SF:ffffff00")%r(X11Probe,41,"550\x2012345\x200ffffffffffffffffffffffffffff
+SF:ffffffffffffffffffffffff00")%r(FourOhFourRequest,41,"550\x2012345\x200f
+SF:fffffffffffffffffffffffffffffffffffffffffffffffffff00")%r(LPDString,41,
+SF:"550\x2012345\x200ffffffffffffffffffffffffffffffffffffffffffffffffffff0
+SF:0")%r(LDAPSearchReq,41,"550\x2012345\x200ffffffffffffffffffffffffffffff
+SF:ffffffffffffffffffffff00")%r(LDAPBindReq,41,"550\x2012345\x200fffffffff
+SF:fffffffffffffffffffffffffffffffffffffffffff00")%r(SIPOptions,41,"550\x2
+SF:012345\x200ffffffffffffffffffffffffffffffffffffffffffffffffffff00")%r(L
+SF:ANDesk-RC,41,"550\x2012345\x200ffffffffffffffffffffffffffffffffffffffff
+SF:ffffffffffff00")%r(TerminalServer,41,"550\x2012345\x200ffffffffffffffff
+SF:ffffffffffffffffffffffffffffffffffff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7-TCP:V=7.95%I=7%D=8/5%Time=6A73706B%P=x86_64-pc-linux-gnu%r(NULL,4
+SF:1,"550\x2012345\x200fffffffffffff777778887777777777cfffffffffffffffffff
+SF:f00")%r(Help,41,"550\x2012345\x200fffffffffffff777778887777777777cfffff
+SF:fffffffffffffff00")%r(GenericLines,41,"550\x2012345\x200fffffffffffff77
+SF:7778887777777777cffffffffffffffffffff00")%r(GetRequest,41,"550\x2012345
+SF:\x200fffffffffffff777778887777777777cffffffffffffffffffff00")%r(HTTPOpt
+SF:ions,41,"550\x2012345\x200fffffffffffff777778887777777777cfffffffffffff
+SF:fffffff00")%r(RTSPRequest,41,"550\x2012345\x200fffffffffffff77777888777
+SF:7777777cffffffffffffffffffff00")%r(RPCCheck,41,"550\x2012345\x200ffffff
+SF:fffffff777778887777777777cffffffffffffffffffff00")%r(DNSVersionBindReqT
+SF:CP,41,"550\x2012345\x200fffffffffffff777778887777777777cfffffffffffffff
+SF:fffff00")%r(DNSStatusRequestTCP,41,"550\x2012345\x200fffffffffffff77777
+SF:8887777777777cffffffffffffffffffff00")%r(SSLSessionReq,41,"550\x2012345
+SF:\x200fffffffffffff777778887777777777cffffffffffffffffffff00")%r(Termina
+SF:lServerCookie,41,"550\x2012345\x200fffffffffffff777778887777777777cffff
+SF:ffffffffffffffff00")%r(TLSSessionReq,41,"550\x2012345\x200fffffffffffff
+SF:777778887777777777cffffffffffffffffffff00")%r(Kerberos,41,"550\x2012345
+SF:\x200fffffffffffff777778887777777777cffffffffffffffffffff00")%r(SMBProg
+SF:Neg,41,"550\x2012345\x200fffffffffffff777778887777777777cffffffffffffff
+SF:ffffff00")%r(X11Probe,41,"550\x2012345\x200fffffffffffff777778887777777
+SF:777cffffffffffffffffffff00")%r(FourOhFourRequest,41,"550\x2012345\x200f
+SF:ffffffffffff777778887777777777cffffffffffffffffffff00")%r(LPDString,41,
+SF:"550\x2012345\x200fffffffffffff777778887777777777cffffffffffffffffffff0
+SF:0")%r(LDAPSearchReq,41,"550\x2012345\x200fffffffffffff77777888777777777
+SF:7cffffffffffffffffffff00")%r(LDAPBindReq,41,"550\x2012345\x200fffffffff
+SF:ffff777778887777777777cffffffffffffffffffff00")%r(SIPOptions,41,"550\x2
+SF:012345\x200fffffffffffff777778887777777777cffffffffffffffffffff00")%r(L
+SF:ANDesk-RC,41,"550\x2012345\x200fffffffffffff777778887777777777cffffffff
+SF:ffffffffffff00")%r(TerminalServer,41,"550\x2012345\x200fffffffffffff777
+SF:778887777777777cffffffffffffffffffff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9-TCP:V=7.95%I=7%D=8/5%Time=6A737066%P=x86_64-pc-linux-gnu%r(NULL,4
+SF:1,"550\x2012345\x200ffffffffff80000088808000000888800000008887fffffffff
+SF:f00")%r(GenericLines,41,"550\x2012345\x200ffffffffff8000008880800000088
+SF:8800000008887ffffffffff00")%r(GetRequest,41,"550\x2012345\x200fffffffff
+SF:f80000088808000000888800000008887ffffffffff00")%r(HTTPOptions,41,"550\x
+SF:2012345\x200ffffffffff80000088808000000888800000008887ffffffffff00")%r(
+SF:RTSPRequest,41,"550\x2012345\x200ffffffffff8000008880800000088880000000
+SF:8887ffffffffff00")%r(RPCCheck,41,"550\x2012345\x200ffffffffff8000008880
+SF:8000000888800000008887ffffffffff00")%r(DNSVersionBindReqTCP,41,"550\x20
+SF:12345\x200ffffffffff80000088808000000888800000008887ffffffffff00")%r(DN
+SF:SStatusRequestTCP,41,"550\x2012345\x200ffffffffff8000008880800000088880
+SF:0000008887ffffffffff00")%r(Help,41,"550\x2012345\x200ffffffffff80000088
+SF:808000000888800000008887ffffffffff00")%r(SSLSessionReq,41,"550\x2012345
+SF:\x200ffffffffff80000088808000000888800000008887ffffffffff00")%r(Termina
+SF:lServerCookie,41,"550\x2012345\x200ffffffffff80000088808000000888800000
+SF:008887ffffffffff00")%r(TLSSessionReq,41,"550\x2012345\x200ffffffffff800
+SF:00088808000000888800000008887ffffffffff00")%r(Kerberos,41,"550\x2012345
+SF:\x200ffffffffff80000088808000000888800000008887ffffffffff00")%r(SMBProg
+SF:Neg,41,"550\x2012345\x200ffffffffff80000088808000000888800000008887ffff
+SF:ffffff00")%r(X11Probe,41,"550\x2012345\x200ffffffffff800000888080000008
+SF:88800000008887ffffffffff00")%r(FourOhFourRequest,41,"550\x2012345\x200f
+SF:fffffffff80000088808000000888800000008887ffffffffff00")%r(LPDString,41,
+SF:"550\x2012345\x200ffffffffff80000088808000000888800000008887ffffffffff0
+SF:0")%r(LDAPSearchReq,41,"550\x2012345\x200ffffffffff80000088808000000888
+SF:800000008887ffffffffff00")%r(LDAPBindReq,41,"550\x2012345\x200fffffffff
+SF:f80000088808000000888800000008887ffffffffff00")%r(SIPOptions,41,"550\x2
+SF:012345\x200ffffffffff80000088808000000888800000008887ffffffffff00")%r(L
+SF:ANDesk-RC,41,"550\x2012345\x200ffffffffff800000888080000008888000000088
+SF:87ffffffffff00")%r(TerminalServer,41,"550\x2012345\x200ffffffffff800000
+SF:88808000000888800000008887ffffffffff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port13-TCP:V=7.95%I=7%D=8/5%Time=6A737066%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x200ffffffff000000888000000000800000080000008800007fff
+SF:ff00")%r(GenericLines,41,"550\x2012345\x200ffffffff00000088800000000080
+SF:0000080000008800007fffff00")%r(GetRequest,41,"550\x2012345\x200ffffffff
+SF:000000888000000000800000080000008800007fffff00")%r(HTTPOptions,41,"550\
+SF:x2012345\x200ffffffff000000888000000000800000080000008800007fffff00")%r
+SF:(RTSPRequest,41,"550\x2012345\x200ffffffff00000088800000000080000008000
+SF:0008800007fffff00")%r(RPCCheck,41,"550\x2012345\x200ffffffff00000088800
+SF:0000000800000080000008800007fffff00")%r(DNSVersionBindReqTCP,41,"550\x2
+SF:012345\x200ffffffff000000888000000000800000080000008800007fffff00")%r(D
+SF:NSStatusRequestTCP,41,"550\x2012345\x200ffffffff00000088800000000080000
+SF:0080000008800007fffff00")%r(Help,41,"550\x2012345\x200ffffffff000000888
+SF:000000000800000080000008800007fffff00")%r(SSLSessionReq,41,"550\x201234
+SF:5\x200ffffffff000000888000000000800000080000008800007fffff00")%r(Termin
+SF:alServerCookie,41,"550\x2012345\x200ffffffff000000888000000000800000080
+SF:000008800007fffff00")%r(TLSSessionReq,41,"550\x2012345\x200ffffffff0000
+SF:00888000000000800000080000008800007fffff00")%r(Kerberos,41,"550\x201234
+SF:5\x200ffffffff000000888000000000800000080000008800007fffff00")%r(SMBPro
+SF:gNeg,41,"550\x2012345\x200ffffffff0000008880000000008000000800000088000
+SF:07fffff00")%r(X11Probe,41,"550\x2012345\x200ffffffff0000008880000000008
+SF:00000080000008800007fffff00")%r(FourOhFourRequest,41,"550\x2012345\x200
+SF:ffffffff000000888000000000800000080000008800007fffff00")%r(LPDString,41
+SF:,"550\x2012345\x200ffffffff000000888000000000800000080000008800007fffff
+SF:00")%r(LDAPSearchReq,41,"550\x2012345\x200ffffffff000000888000000000800
+SF:000080000008800007fffff00")%r(LDAPBindReq,41,"550\x2012345\x200ffffffff
+SF:000000888000000000800000080000008800007fffff00")%r(SIPOptions,41,"550\x
+SF:2012345\x200ffffffff000000888000000000800000080000008800007fffff00")%r(
+SF:LANDesk-RC,41,"550\x2012345\x200ffffffff0000008880000000008000000800000
+SF:08800007fffff00")%r(TerminalServer,41,"550\x2012345\x200ffffffff0000008
+SF:88000000000800000080000008800007fffff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port17-TCP:V=7.95%I=7%D=8/5%Time=6A737066%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x200fffff7880000780f7cffff7800f8000008fffffff80808807f
+SF:ff00")%r(GenericLines,41,"550\x2012345\x200fffff7880000780f7cffff7800f8
+SF:000008fffffff80808807fff00")%r(GetRequest,41,"550\x2012345\x200fffff788
+SF:0000780f7cffff7800f8000008fffffff80808807fff00")%r(HTTPOptions,41,"550\
+SF:x2012345\x200fffff7880000780f7cffff7800f8000008fffffff80808807fff00")%r
+SF:(RTSPRequest,41,"550\x2012345\x200fffff7880000780f7cffff7800f8000008fff
+SF:ffff80808807fff00")%r(RPCCheck,41,"550\x2012345\x200fffff7880000780f7cf
+SF:fff7800f8000008fffffff80808807fff00")%r(DNSVersionBindReqTCP,41,"550\x2
+SF:012345\x200fffff7880000780f7cffff7800f8000008fffffff80808807fff00")%r(D
+SF:NSStatusRequestTCP,41,"550\x2012345\x200fffff7880000780f7cffff7800f8000
+SF:008fffffff80808807fff00")%r(Help,41,"550\x2012345\x200fffff7880000780f7
+SF:cffff7800f8000008fffffff80808807fff00")%r(SSLSessionReq,41,"550\x201234
+SF:5\x200fffff7880000780f7cffff7800f8000008fffffff80808807fff00")%r(Termin
+SF:alServerCookie,41,"550\x2012345\x200fffff7880000780f7cffff7800f8000008f
+SF:ffffff80808807fff00")%r(TLSSessionReq,41,"550\x2012345\x200fffff7880000
+SF:780f7cffff7800f8000008fffffff80808807fff00")%r(Kerberos,41,"550\x201234
+SF:5\x200fffff7880000780f7cffff7800f8000008fffffff80808807fff00")%r(SMBPro
+SF:gNeg,41,"550\x2012345\x200fffff7880000780f7cffff7800f8000008fffffff8080
+SF:8807fff00")%r(X11Probe,41,"550\x2012345\x200fffff7880000780f7cffff7800f
+SF:8000008fffffff80808807fff00")%r(FourOhFourRequest,41,"550\x2012345\x200
+SF:fffff7880000780f7cffff7800f8000008fffffff80808807fff00")%r(LPDString,41
+SF:,"550\x2012345\x200fffff7880000780f7cffff7800f8000008fffffff80808807fff
+SF:00")%r(LDAPSearchReq,41,"550\x2012345\x200fffff7880000780f7cffff7800f80
+SF:00008fffffff80808807fff00")%r(LDAPBindReq,41,"550\x2012345\x200fffff788
+SF:0000780f7cffff7800f8000008fffffff80808807fff00")%r(SIPOptions,41,"550\x
+SF:2012345\x200fffff7880000780f7cffff7800f8000008fffffff80808807fff00")%r(
+SF:LANDesk-RC,41,"550\x2012345\x200fffff7880000780f7cffff7800f8000008fffff
+SF:ff80808807fff00")%r(TerminalServer,41,"550\x2012345\x200fffff7880000780
+SF:f7cffff7800f8000008fffffff80808807fff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port19-TCP:V=7.95%I=7%D=8/5%Time=6A737066%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x200ff70008fc77f7000000f80008f8000007f0000000000000888
+SF:ff00")%r(GenericLines,41,"550\x2012345\x200ff70008fc77f7000000f80008f80
+SF:00007f0000000000000888ff00")%r(GetRequest,41,"550\x2012345\x200ff70008f
+SF:c77f7000000f80008f8000007f0000000000000888ff00")%r(HTTPOptions,41,"550\
+SF:x2012345\x200ff70008fc77f7000000f80008f8000007f0000000000000888ff00")%r
+SF:(RTSPRequest,41,"550\x2012345\x200ff70008fc77f7000000f80008f8000007f000
+SF:0000000000888ff00")%r(RPCCheck,41,"550\x2012345\x200ff70008fc77f7000000
+SF:f80008f8000007f0000000000000888ff00")%r(DNSVersionBindReqTCP,41,"550\x2
+SF:012345\x200ff70008fc77f7000000f80008f8000007f0000000000000888ff00")%r(D
+SF:NSStatusRequestTCP,41,"550\x2012345\x200ff70008fc77f7000000f80008f80000
+SF:07f0000000000000888ff00")%r(Help,41,"550\x2012345\x200ff70008fc77f70000
+SF:00f80008f8000007f0000000000000888ff00")%r(SSLSessionReq,41,"550\x201234
+SF:5\x200ff70008fc77f7000000f80008f8000007f0000000000000888ff00")%r(Termin
+SF:alServerCookie,41,"550\x2012345\x200ff70008fc77f7000000f80008f8000007f0
+SF:000000000000888ff00")%r(TLSSessionReq,41,"550\x2012345\x200ff70008fc77f
+SF:7000000f80008f8000007f0000000000000888ff00")%r(Kerberos,41,"550\x201234
+SF:5\x200ff70008fc77f7000000f80008f8000007f0000000000000888ff00")%r(SMBPro
+SF:gNeg,41,"550\x2012345\x200ff70008fc77f7000000f80008f8000007f00000000000
+SF:00888ff00")%r(X11Probe,41,"550\x2012345\x200ff70008fc77f7000000f80008f8
+SF:000007f0000000000000888ff00")%r(FourOhFourRequest,41,"550\x2012345\x200
+SF:ff70008fc77f7000000f80008f8000007f0000000000000888ff00")%r(LPDString,41
+SF:,"550\x2012345\x200ff70008fc77f7000000f80008f8000007f0000000000000888ff
+SF:00")%r(LDAPSearchReq,41,"550\x2012345\x200ff70008fc77f7000000f80008f800
+SF:0007f0000000000000888ff00")%r(LDAPBindReq,41,"550\x2012345\x200ff70008f
+SF:c77f7000000f80008f8000007f0000000000000888ff00")%r(SIPOptions,41,"550\x
+SF:2012345\x200ff70008fc77f7000000f80008f8000007f0000000000000888ff00")%r(
+SF:LANDesk-RC,41,"550\x2012345\x200ff70008fc77f7000000f80008f8000007f00000
+SF:00000000888ff00")%r(TerminalServer,41,"550\x2012345\x200ff70008fc77f700
+SF:0000f80008f8000007f0000000000000888ff00");
+Service Info: Hosts: xbzsO, DxL, ogkAPGZg, E, gpWvN; OSs: Linux, Windows, Mac OS X, SunOS, IOS; Devices: media device, remote management, router, switch, printer; CPE: cpe:/o:linux:linux_kernel, cpe:/o:microsoft:windows, cpe:/o:apple:mac_os_x, cpe:/o:sun:sunos, cpe:/h:cisco:router_1721
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug  5 09:33:26 2026 -- 1 IP address (1 host up) scanned in 973.75 seconds

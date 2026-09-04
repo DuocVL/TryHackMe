@@ -1,0 +1,8 @@
+/index               [32m (Status: 200)[0m [Size: 289]
+/info                [32m (Status: 200)[0m [Size: 145]
+/config              [32m (Status: 200)[0m [Size: 92]
+/logs                [32m (Status: 200)[0m [Size: 165]
+/objects             [32m (Status: 200)[0m [Size: 283]
+/description         [32m (Status: 200)[0m [Size: 73]
+/branches            [32m (Status: 200)[0m [Size: 124]
+/refs                [32m (Status: 200)[0m [Size: 169]

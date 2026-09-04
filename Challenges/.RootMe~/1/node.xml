@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="1" master_id="0" name="Tong quan" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773170442" ts_lastsave="1773181167">
+    <rich_text>RootMe 
+- Thu thach trong TryHackMe
+</rich_text>
+    <rich_text link="webs https://tryhackme.com/room/rrootme">https://tryhackme.com/room/rrootme</rich_text>
+    <rich_text>
+- IP may muc tieu : 10.48.145.148
+
+
+
+
+
+3. Thu kiem tra lo hong upload
+- Co the upload .png , .txt ,...
+- Chan php 
+→ Thu upload php reverse shell doi duoi file </rich_text>
+  </node>
+</cherrytree>

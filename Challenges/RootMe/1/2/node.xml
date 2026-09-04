@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="2" master_id="0" name="Quet Cong" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773181127" ts_lastsave="1773181145">
+    <rich_text>1. Quet may
+$ nmap -A -T4 10.48.145.148 -oN ScanPort.txt
+-&gt;
+
+Starting Nmap 7.95 ( </rich_text>
+    <rich_text link="webs https://nmap.org">https://nmap.org</rich_text>
+    <rich_text> ) at 2026-03-10 11:36 AKDT
+Nmap scan report for 10.48.145.148
+Host is up (0.12s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 22:b8:4c:04:df:67:13:16:c6:7b:54:76:3f:eb:ad:86 (RSA)
+|   256 1e:2b:59:1e:b8:0e:4b:83:ee:d1:bf:3a:f5:71:85:05 (ECDSA)
+|_  256 c9:5b:99:9c:72:b8:b7:39:a4:a8:e3:7f:50:99:41:11 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: HackIT - Home
+No exact OS matches for host (If you know what OS is running on it, see </rich_text>
+    <rich_text link="webs https://nmap.org/submit/">https://nmap.org/submit/</rich_text>
+    <rich_text> ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=3/10%OT=22%CT=1%CU=30812%PV=Y%DS=3%DC=T%G=Y%TM=69B072C
+OS:F%P=x86_64-pc-linux-gnu)SEQ(SP=101%GCD=1%ISR=106%TI=Z%CI=Z%II=I%TS=A)SEQ
+OS:(SP=102%GCD=1%ISR=10D%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=105%GCD=1%ISR=108%TI=Z%
+OS:CI=Z%II=I%TS=A)SEQ(SP=106%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=F7%GC
+OS:D=1%ISR=111%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E
+OS:8NNT11NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%
+OS:W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW7%CC
+OS:=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T
+OS:=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=
+OS:0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=
+OS:Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=
+OS:G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 8888/tcp)
+HOP RTT       ADDRESS
+1   111.62 ms 192.168.128.1
+2   ...
+3   110.77 ms 10.48.145.148
+
+OS and Service detection performed. Please report any incorrect results at </rich_text>
+    <rich_text link="webs https://nmap.org/submit/">https://nmap.org/submit/</rich_text>
+    <rich_text> .
+Nmap done: 1 IP address (1 host up) scanned in 29.91 seconds
+
+→ 2cong mo :
++ 22 :  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
++ 80 :  http    Apache httpd 2.4.41 ((Ubuntu))</rich_text>
+  </node>
+</cherrytree>

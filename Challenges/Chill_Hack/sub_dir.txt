@@ -1,0 +1,23 @@
+/.htaccess.sh        [33m (Status: 403)[0m [Size: 278]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 278]
+/.htpasswd.sh        [33m (Status: 403)[0m [Size: 278]
+/.hta.sh             [33m (Status: 403)[0m [Size: 278]
+/.htaccess           [33m (Status: 403)[0m [Size: 278]
+/.htaccess.js        [33m (Status: 403)[0m [Size: 278]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 278]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 278]
+/.htpasswd.js        [33m (Status: 403)[0m [Size: 278]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 278]
+/.htpasswd           [33m (Status: 403)[0m [Size: 278]
+/.hta                [33m (Status: 403)[0m [Size: 278]
+/.hta.txt            [33m (Status: 403)[0m [Size: 278]
+/.hta.php            [33m (Status: 403)[0m [Size: 278]
+/.hta.js             [33m (Status: 403)[0m [Size: 278]
+/contact.php         [32m (Status: 200)[0m [Size: 0]
+/css                 [36m (Status: 301)[0m [Size: 312][34m [--> http://10.49.164.205/css/][0m
+/fonts               [36m (Status: 301)[0m [Size: 314][34m [--> http://10.49.164.205/fonts/][0m
+/images              [36m (Status: 301)[0m [Size: 315][34m [--> http://10.49.164.205/images/][0m
+/index.html          [32m (Status: 200)[0m [Size: 35184]
+/js                  [36m (Status: 301)[0m [Size: 311][34m [--> http://10.49.164.205/js/][0m
+/secret              [36m (Status: 301)[0m [Size: 315][34m [--> http://10.49.164.205/secret/][0m
+/server-status       [33m (Status: 403)[0m [Size: 278]

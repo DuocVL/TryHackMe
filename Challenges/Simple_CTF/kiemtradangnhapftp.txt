@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Tue May 19 19:08:30 2026 as: /usr/lib/nmap/nmap --privileged --script ftp-anon -p21 -oN kiemtradangnhapftp.txt 10.48.134.80
+Nmap scan report for 10.48.134.80
+Host is up (0.12s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: TIMEOUT
+
+# Nmap done at Tue May 19 19:09:01 2026 -- 1 IP address (1 host up) scanned in 30.96 seconds

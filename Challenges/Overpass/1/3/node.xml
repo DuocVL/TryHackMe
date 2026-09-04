@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="3" master_id="0" name="Quet thu muc an tren web" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773351140" ts_lastsave="1773351913">
+    <rich_text>$ gobuster dir -u </rich_text>
+    <rich_text link="webs http://10.48.153.181">http://10.48.153.181</rich_text>
+    <rich_text> -w /usr/share/wordlists/dirb/common.txt -x php,html,txt,js,sh,java,py -t 50 -o ScanDir.txt 
+===============================================================
+Gobuster v3.8
+by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     </rich_text>
+    <rich_text link="webs http://10.48.153.181">http://10.48.153.181</rich_text>
+    <rich_text>
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.8
+[+] Extensions:              php,html,txt,js,sh,java,py
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/404.html             (Status: 200) [Size: 782]
+/aboutus              (Status: 301) [Size: 0] [--&gt; aboutus/]
+/admin                (Status: 301) [Size: 42] [--&gt; /admin/]
+/admin.html           (Status: 200) [Size: 1525]
+/cookie.js            (Status: 200) [Size: 1502]
+/css                  (Status: 301) [Size: 0] [--&gt; css/]
+/downloads            (Status: 301) [Size: 0] [--&gt; downloads/]
+/img                  (Status: 301) [Size: 0] [--&gt; img/]
+/index.html           (Status: 301) [Size: 0] [--&gt; ./]
+/index.html           (Status: 301) [Size: 0] [--&gt; ./]
+/login.js             (Status: 200) [Size: 1779]
+/main.js              (Status: 200) [Size: 28]
+Progress: 36904 / 36904 (100.00%)
+===============================================================
+Finished
+===============================================================
+
+→ </rich_text>
+    <rich_text link="webs http://10.48.153.181/admin/">http://10.48.153.181/admin/</rich_text>
+    <rich_text>
+→ </rich_text>
+    <rich_text link="webs http://10.48.153.181/css/">http://10.48.153.181/css/</rich_text>
+  </node>
+</cherrytree>

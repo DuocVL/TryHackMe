@@ -1,0 +1,72 @@
+# Nmap 7.95 scan initiated Tue Jun  2 00:00:58 2026 as: /usr/lib/nmap/nmap --privileged -A -sV -T4 -oN Scan_Port.txt 10.49.142.1
+Nmap scan report for 10.49.142.1
+Host is up (0.11s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.250.70
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxr-xr-x    2 0        0            4096 Aug 11  2019 bin
+| drwxr-xr-x    3 0        0            4096 Aug 11  2019 boot
+| drwxr-xr-x   17 0        0            3700 Jun 02 00:47 dev
+| drwxr-xr-x   85 0        0            4096 Aug 13  2019 etc
+| drwxr-xr-x    3 0        0            4096 Aug 11  2019 home
+| lrwxrwxrwx    1 0        0              33 Aug 11  2019 initrd.img -> boot/initrd.img-4.4.0-157-generic
+| lrwxrwxrwx    1 0        0              33 Aug 11  2019 initrd.img.old -> boot/initrd.img-4.4.0-142-generic
+| drwxr-xr-x   19 0        0            4096 Aug 11  2019 lib
+| drwxr-xr-x    2 0        0            4096 Aug 11  2019 lib64
+| drwx------    2 0        0           16384 Aug 11  2019 lost+found
+| drwxr-xr-x    4 0        0            4096 Aug 11  2019 media
+| drwxr-xr-x    2 0        0            4096 Feb 26  2019 mnt
+| drwxrwxrwx    2 1000     1000         4096 Aug 11  2019 notread [NSE: writeable]
+| drwxr-xr-x    2 0        0            4096 Aug 11  2019 opt
+| dr-xr-xr-x   87 0        0               0 Jun 02 00:47 proc
+| drwx------    3 0        0            4096 Aug 11  2019 root
+| drwxr-xr-x   18 0        0             540 Jun 02 00:48 run
+| drwxr-xr-x    2 0        0           12288 Aug 11  2019 sbin
+| drwxr-xr-x    3 0        0            4096 Aug 11  2019 srv
+| dr-xr-xr-x   13 0        0               0 Jun 02 00:47 sys
+|_Only 20 shown. Use --script-args ftp-anon.maxlist=-1 to see all.
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 8a:f9:48:3e:11:a1:aa:fc:b7:86:71:d0:2a:f6:24:e7 (RSA)
+|   256 73:5d:de:9a:88:6e:64:7a:e1:87:ec:65:ae:11:93:e3 (ECDSA)
+|_  256 56:f9:9f:24:f1:52:fc:16:b7:7b:a3:e2:4f:17:b4:ea (ED25519)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=6/2%OT=21%CT=1%CU=43569%PV=Y%DS=3%DC=T%G=Y%TM=6A1E8DD2
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=8)SEQ(
+OS:SP=104%GCD=1%ISR=107%TI=Z%CI=I%II=I%TS=8)SEQ(SP=104%GCD=1%ISR=10D%TI=Z%C
+OS:I=I%II=I%TS=8)SEQ(SP=107%GCD=1%ISR=10D%TI=Z%CI=I%II=I%TS=8)SEQ(SP=108%GC
+OS:D=1%ISR=10A%TI=Z%CI=I%II=I%TS=8)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E
+OS:8NNT11NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=68DF%W2=68DF%
+OS:W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M4E8NNSNW7%CC
+OS:=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T
+OS:=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=
+OS:0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=
+OS:Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=
+OS:G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT       ADDRESS
+1   113.71 ms 192.168.128.1
+2   ...
+3   115.62 ms 10.49.142.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jun  2 00:01:22 2026 -- 1 IP address (1 host up) scanned in 24.36 seconds

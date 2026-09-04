@@ -1,0 +1,67 @@
+# Nmap 7.95 scan initiated Mon Aug  3 03:16:29 2026 as: /usr/lib/nmap/nmap -A -sC -oN scan.txt 10.48.157.11
+Nmap scan report for 10.48.157.11
+Host is up (0.13s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 99:23:31:bb:b1:e9:43:b7:56:94:4c:b9:e8:21:46:c5 (RSA)
+|   256 57:c0:75:02:71:2d:19:31:83:db:e4:fe:67:96:68:cf (ECDSA)
+|_  256 46:fa:4e:fc:10:a5:4f:57:57:d0:6d:54:f6:c3:4d:fe (ED25519)
+80/tcp  open  http        Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Skynet
+110/tcp open  pop3        Dovecot pop3d
+|_pop3-capabilities: CAPA SASL RESP-CODES PIPELINING TOP AUTH-RESP-CODE UIDL
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp open  imap        Dovecot imapd
+|_imap-capabilities: SASL-IR ID IMAP4rev1 LOGINDISABLEDA0001 LOGIN-REFERRALS more Pre-login OK LITERAL+ have post-login IDLE capabilities ENABLE listed
+445/tcp open  netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=8/3%OT=22%CT=1%CU=41071%PV=Y%DS=3%DC=T%G=Y%TM=6A7078B2
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=104%TI=Z%CI=I%II=I%TS=8)SEQ(
+OS:SP=103%GCD=1%ISR=10A%TI=Z%CI=I%II=I%TS=8)SEQ(SP=104%GCD=1%ISR=109%TI=Z%C
+OS:I=I%II=I%TS=8)SEQ(SP=FD%GCD=1%ISR=10D%TI=Z%CI=I%II=I%TS=8)SEQ(SP=FE%GCD=
+OS:1%ISR=110%TI=Z%CI=I%II=I%TS=8)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E8N
+OS:NT11NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=68DF%W2=68DF%W3
+OS:=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M4E8NNSNW7%CC=Y
+OS:%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=4
+OS:0%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%
+OS:Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%
+OS:A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%
+OS:RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: Host: SKYNET; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 1h40m01s, deviation: 2h53m12s, median: 0s
+| smb2-time: 
+|   date: 2026-08-03T11:17:01
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: skynet
+|   NetBIOS computer name: SKYNET\x00
+|   Domain name: \x00
+|   FQDN: skynet
+|_  System time: 2026-08-03T06:17:01-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_nbstat: NetBIOS name: SKYNET, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+
+TRACEROUTE (using port 3389/tcp)
+HOP RTT       ADDRESS
+1   131.41 ms 192.168.128.1
+2   ...
+3   135.08 ms 10.48.157.11
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug  3 03:17:06 2026 -- 1 IP address (1 host up) scanned in 37.52 seconds

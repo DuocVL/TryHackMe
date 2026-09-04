@@ -1,0 +1,677 @@
+Configuration {
+    kind: "configuration",
+    wordlist: "/usr/share/seclists/Discovery/Web-Content/common.txt",
+    config: "/etc/feroxbuster/ferox-config.toml",
+    proxy: "",
+    replay_proxy: "",
+    server_certs: [],
+    client_cert: "",
+    client_key: "",
+    target_url: "http://10.49.179.55/",
+    status_codes: [
+        100,
+        101,
+        102,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        226,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        307,
+        308,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        421,
+        422,
+        423,
+        424,
+        426,
+        428,
+        429,
+        431,
+        451,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        510,
+        511,
+        103,
+        425,
+    ],
+    replay_codes: [
+        100,
+        101,
+        102,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        226,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        307,
+        308,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        421,
+        422,
+        423,
+        424,
+        426,
+        428,
+        429,
+        431,
+        451,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        510,
+        511,
+        103,
+        425,
+    ],
+    filter_status: [],
+    client: Client {
+        accepts: Accepts,
+        proxies: [
+            Matcher,
+        ],
+        redirect_policy: "Policy(None)",
+        referer: true,
+        default_headers: {
+            "accept": "*/*",
+            "user-agent": "feroxbuster/2.13.1",
+        },
+        reqwest::config::RequestTimeout: 7s,
+    },
+    replay_client: None,
+    threads: 50,
+    timeout: 7,
+    verbosity: 0,
+    silent: false,
+    quiet: false,
+    output_level: Default,
+    auto_bail: false,
+    auto_tune: false,
+    requester_policy: Default,
+    json: false,
+    output: "scan_web.txt",
+    debug_log: "",
+    user_agent: "feroxbuster/2.13.1",
+    random_agent: false,
+    redirects: false,
+    insecure: false,
+    extensions: [],
+    methods: [
+        "GET",
+    ],
+    data: [],
+    headers: {},
+    queries: [],
+    no_recursion: false,
+    extract_links: true,
+    add_slash: false,
+    stdin: false,
+    cached_stdin: [],
+    depth: 4,
+    scan_limit: 0,
+    parallel: 0,
+    rate_limit: 0,
+    filter_size: [],
+    filter_line_count: [],
+    filter_word_count: [],
+    filter_regex: [],
+    dont_filter: false,
+    resumed: false,
+    resume_from: "",
+    save_state: true,
+    time_limit: "",
+    filter_similar: [],
+    url_denylist: [],
+    regex_denylist: [],
+    scope: [
+        Url {
+            scheme: "http",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Ipv4(
+                    10.49.179.55,
+                ),
+            ),
+            port: None,
+            path: "/",
+            query: None,
+            fragment: None,
+        },
+    ],
+    collect_extensions: false,
+    dont_collect: [
+        "woff2",
+        "woff",
+        "ttf",
+        "otf",
+        "eot",
+        "tif",
+        "tiff",
+        "ico",
+        "cur",
+        "bmp",
+        "webp",
+        "svg",
+        "png",
+        "jpg",
+        "jpeg",
+        "jfif",
+        "gif",
+        "avif",
+        "apng",
+        "pjpeg",
+        "pjp",
+        "mov",
+        "wav",
+        "mpg",
+        "mpeg",
+        "mp3",
+        "mp4",
+        "m4a",
+        "m4p",
+        "m4v",
+        "ogg",
+        "webm",
+        "ogv",
+        "oga",
+        "flac",
+        "aac",
+        "3gp",
+        "css",
+        "zip",
+        "xls",
+        "xml",
+        "gz",
+        "tgz",
+    ],
+    collect_backups: false,
+    backup_extensions: [
+        "~",
+        ".bak",
+        ".bak2",
+        ".old",
+        ".1",
+    ],
+    collect_words: false,
+    force_recursion: false,
+    update_app: false,
+    scan_dir_listings: false,
+    request_file: "",
+    protocol: "https",
+    limit_bars: 0,
+    unique: false,
+    response_size_limit: 4194304,
+}
+200      GET      107l      258w     4151c http://10.49.179.55/api.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.49.179.55/assets/ (Apache)
+200      GET      703l     3756w   321347c http://10.49.179.55/assets/bootstrap-icons.woff
+200      GET     2078l    10308w    98180c http://10.49.179.55/assets/bootstrap-icons.css
+200      GET    10993l    45090w   293671c http://10.49.179.55/assets/jquery-3.6.3.js
+200      GET       14l       19w      173c http://10.49.179.55/assets/styles.css
+301      GET        9l       28w      313c http://10.49.179.55/assets => http://10.49.179.55/assets/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.49.179.55/assets/bootstrap-icons (Apache)
+200      GET        5l       18w   220780c http://10.49.179.55/assets/bootstrap.min.css
+200      GET       48l       89w     1417c http://10.49.179.55/
+200      GET        6l       31w    80599c http://10.49.179.55/assets/bootstrap.bundle.min.js
+200      GET        1l      115w    12646c http://10.49.179.55/assets/core.js
+200      GET       93l      561w   130608c http://10.49.179.55/assets/bootstrap-icons.woff2
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.49.179.55/assets/bootstrap-icons/fonts (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.49.179.55/assets/bootstrap-icons/css (Apache)
+200      GET       48l       89w     1417c http://10.49.179.55/index.php
+301      GET        9l       28w      317c http://10.49.179.55/javascript => http://10.49.179.55/javascript/
+301      GET        9l       28w      311c http://10.49.179.55/mail => http://10.49.179.55/mail/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.49.179.55/mail (Apache)
+200      GET       38l      180w     1680c http://10.49.179.55/mail/mail.log
+301      GET        9l       28w      317c http://10.49.179.55/phpmyadmin => http://10.49.179.55/phpmyadmin/
+200      GET       65l       99w     1710c http://10.49.179.55/sitemap.xml
+301      GET        9l       28w      324c http://10.49.179.55/javascript/jquery => http://10.49.179.55/javascript/jquery/
+301      GET        9l       28w      321c http://10.49.179.55/phpmyadmin/doc => http://10.49.179.55/phpmyadmin/doc/
+200      GET       98l      278w    35231c http://10.49.179.55/phpmyadmin/favicon.ico
+302      GET        0l        0w        0c http://10.49.179.55/phpmyadmin/url.php => http://10.49.179.55/phpmyadmin/
+200      GET       72l      300w     2500c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/addon/runmode/runmode.js
+301      GET        9l       28w      320c http://10.49.179.55/phpmyadmin/js => http://10.49.179.55/phpmyadmin/js/
+200      GET       73l      141w     2999c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/addon/lint/lint.css
+200      GET      304l     1027w     9599c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/addon/hint/sql-hint.js
+200      GET       71l      146w     1169c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery.debounce-1.0.5.js
+200      GET       50l       54w     2111c http://10.49.179.55/phpmyadmin/js/whitelist.php
+200      GET      163l      501w     3883c http://10.49.179.55/phpmyadmin/js/vendor/js.cookie.js
+200      GET       59l      142w     1749c http://10.49.179.55/phpmyadmin/js/page_settings.js
+200      GET      169l      370w     2746c http://10.49.179.55/phpmyadmin/themes/pmahomme/css/printview.css
+200      GET      221l      892w    14929c http://10.49.179.55/phpmyadmin/doc/html/index.html
+200      GET        1l        1w       53c http://10.49.179.55/phpmyadmin/themes/dot.gif
+200      GET      678l     2801w    19092c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery-migrate.js
+200      GET       38l       82w     1048c http://10.49.179.55/phpmyadmin/js/codemirror/addon/lint/sql-lint.js
+200      GET      101l      332w     3264c http://10.49.179.55/phpmyadmin/js/shortcuts_handler.js
+200      GET      326l      943w    10837c http://10.49.179.55/phpmyadmin/js/error_report.js
+200      GET      390l     2119w    16522c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery.ba-hashchange-1.3.js
+200      GET       20l       80w     8181c http://10.49.179.55/phpmyadmin/themes/pmahomme/img/logo_right.png
+200      GET      834l     3085w    31246c http://10.49.179.55/phpmyadmin/js/ajax.js
+200      GET      221l      975w     8267c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery.mousewheel.js
+200      GET      252l      866w     8610c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/addon/lint/lint.js
+200      GET      365l     1062w    20643c http://10.49.179.55/phpmyadmin/js/doclinks.js
+200      GET       14l       60w      471c http://10.49.179.55/phpmyadmin/js/cross_framing_protection.js
+200      GET      550l     1784w    19196c http://10.49.179.55/phpmyadmin/js/common.js
+301      GET        9l       28w      324c http://10.49.179.55/phpmyadmin/locale => http://10.49.179.55/phpmyadmin/locale/
+200      GET      886l     2750w    27526c http://10.49.179.55/phpmyadmin/js/config.js
+200      GET       36l       69w      623c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/addon/hint/show-hint.css
+200      GET     1277l     5005w    45389c http://10.49.179.55/phpmyadmin/js/vendor/tracekit.js
+200      GET      221l      687w    14773c http://10.49.179.55/phpmyadmin/index.php
+200      GET      402l     1848w    12832c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery.event.drag-2.2.js
+200      GET     1650l     6804w    50690c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery.validate.js
+200      GET      460l     1753w    17378c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/addon/hint/show-hint.js
+200      GET      349l      992w     8705c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/lib/codemirror.css
+200      GET      494l     5524w    47451c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/mode/sql/sql.js
+200      GET      140l      408w     3333c http://10.49.179.55/phpmyadmin/js/keyhandler.js
+200      GET      211l      951w     7387c http://10.49.179.55/phpmyadmin/js/vendor/sprintf.js
+200      GET     1680l     5022w    60776c http://10.49.179.55/phpmyadmin/js/navigation.js
+200      GET      222l      789w     8318c http://10.49.179.55/phpmyadmin/js/menu-resizer.js
+200      GET     2291l     8530w    78475c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js
+200      GET      761l     2381w    27654c http://10.49.179.55/phpmyadmin/js/indexes.js
+200      GET      221l      687w    14780c http://10.49.179.55/phpmyadmin/db_structure.php
+200      GET     1075l     4004w    47688c http://10.49.179.55/phpmyadmin/js/rte.js
+200      GET      962l     2076w    36566c http://10.49.179.55/phpmyadmin/themes/pmahomme/jquery/jquery-ui.css
+200      GET     2515l     7997w   175433c http://10.49.179.55/phpmyadmin/js/functions.js
+200      GET        2l     1238w    88145c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery.min.js
+200      GET     1833l     9730w   395660c http://10.49.179.55/phpmyadmin/js/vendor/codemirror/lib/codemirror.js
+200      GET        8l      508w   253681c http://10.49.179.55/phpmyadmin/js/vendor/jquery/jquery-ui.min.js
+200      GET     1495l     3979w    57280c http://10.49.179.55/phpmyadmin/js/console.js
+200      GET     4942l     9950w    93870c http://10.49.179.55/phpmyadmin/phpmyadmin.css.php
+200      GET      110l      873w     8273c http://10.49.179.55/phpmyadmin/js/messages.php
+200      GET     1775l     7336w   271809c http://10.49.179.55/javascript/jquery/jquery
+200      GET      221l      687w    14775c http://10.49.179.55/phpmyadmin/phpinfo.php
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/ar => http://10.49.179.55/phpmyadmin/locale/ar/
+301      GET        9l       28w      321c http://10.49.179.55/phpmyadmin/sql => http://10.49.179.55/phpmyadmin/sql/
+301      GET        9l       28w      324c http://10.49.179.55/phpmyadmin/themes => http://10.49.179.55/phpmyadmin/themes/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/ca => http://10.49.179.55/phpmyadmin/locale/ca/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/az => http://10.49.179.55/phpmyadmin/locale/az/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/bg => http://10.49.179.55/phpmyadmin/locale/bg/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/be => http://10.49.179.55/phpmyadmin/locale/be/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/de => http://10.49.179.55/phpmyadmin/locale/de/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/da => http://10.49.179.55/phpmyadmin/locale/da/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/el => http://10.49.179.55/phpmyadmin/locale/el/
+301      GET        9l       28w      326c http://10.49.179.55/phpmyadmin/doc/html => http://10.49.179.55/phpmyadmin/doc/html/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/et => http://10.49.179.55/phpmyadmin/locale/et/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/es => http://10.49.179.55/phpmyadmin/locale/es/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/fi => http://10.49.179.55/phpmyadmin/locale/fi/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/hu => http://10.49.179.55/phpmyadmin/locale/hu/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/gl => http://10.49.179.55/phpmyadmin/locale/gl/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/ia => http://10.49.179.55/phpmyadmin/locale/ia/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/it => http://10.49.179.55/phpmyadmin/locale/it/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/ja => http://10.49.179.55/phpmyadmin/locale/ja/
+301      GET        9l       28w      334c http://10.49.179.55/phpmyadmin/doc/html/_images => http://10.49.179.55/phpmyadmin/doc/html/_images/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/ko => http://10.49.179.55/phpmyadmin/locale/ko/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/lt => http://10.49.179.55/phpmyadmin/locale/lt/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/nl => http://10.49.179.55/phpmyadmin/locale/nl/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/pl => http://10.49.179.55/phpmyadmin/locale/pl/
+301      GET        9l       28w      327c http://10.49.179.55/phpmyadmin/locale/pt => http://10.49.179.55/phpmyadmin/locale/pt/
+Configuration {
+    kind: "configuration",
+    wordlist: "/usr/share/seclists/Discovery/Web-Content/common.txt",
+    config: "/etc/feroxbuster/ferox-config.toml",
+    proxy: "",
+    replay_proxy: "",
+    server_certs: [],
+    client_cert: "",
+    client_key: "",
+    target_url: "http://10.48.173.150/",
+    status_codes: [
+        100,
+        101,
+        102,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        226,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        307,
+        308,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        421,
+        422,
+        423,
+        424,
+        426,
+        428,
+        429,
+        431,
+        451,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        510,
+        511,
+        103,
+        425,
+    ],
+    replay_codes: [
+        100,
+        101,
+        102,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        226,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        307,
+        308,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        421,
+        422,
+        423,
+        424,
+        426,
+        428,
+        429,
+        431,
+        451,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        510,
+        511,
+        103,
+        425,
+    ],
+    filter_status: [],
+    client: Client {
+        accepts: Accepts,
+        proxies: [
+            Matcher,
+        ],
+        redirect_policy: "Policy(None)",
+        referer: true,
+        default_headers: {
+            "accept": "*/*",
+            "user-agent": "feroxbuster/2.13.1",
+        },
+        reqwest::config::RequestTimeout: 7s,
+    },
+    replay_client: None,
+    threads: 50,
+    timeout: 7,
+    verbosity: 0,
+    silent: false,
+    quiet: false,
+    output_level: Default,
+    auto_bail: false,
+    auto_tune: false,
+    requester_policy: Default,
+    json: false,
+    output: "scan_web.txt",
+    debug_log: "",
+    user_agent: "feroxbuster/2.13.1",
+    random_agent: false,
+    redirects: false,
+    insecure: false,
+    extensions: [],
+    methods: [
+        "GET",
+    ],
+    data: [],
+    headers: {},
+    queries: [],
+    no_recursion: false,
+    extract_links: true,
+    add_slash: false,
+    stdin: false,
+    cached_stdin: [],
+    depth: 4,
+    scan_limit: 0,
+    parallel: 0,
+    rate_limit: 0,
+    filter_size: [],
+    filter_line_count: [],
+    filter_word_count: [],
+    filter_regex: [],
+    dont_filter: false,
+    resumed: false,
+    resume_from: "",
+    save_state: true,
+    time_limit: "",
+    filter_similar: [],
+    url_denylist: [],
+    regex_denylist: [],
+    scope: [
+        Url {
+            scheme: "http",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Ipv4(
+                    10.48.173.150,
+                ),
+            ),
+            port: None,
+            path: "/",
+            query: None,
+            fragment: None,
+        },
+    ],
+    collect_extensions: false,
+    dont_collect: [
+        "woff2",
+        "woff",
+        "ttf",
+        "otf",
+        "eot",
+        "tif",
+        "tiff",
+        "ico",
+        "cur",
+        "bmp",
+        "webp",
+        "svg",
+        "png",
+        "jpg",
+        "jpeg",
+        "jfif",
+        "gif",
+        "avif",
+        "apng",
+        "pjpeg",
+        "pjp",
+        "mov",
+        "wav",
+        "mpg",
+        "mpeg",
+        "mp3",
+        "mp4",
+        "m4a",
+        "m4p",
+        "m4v",
+        "ogg",
+        "webm",
+        "ogv",
+        "oga",
+        "flac",
+        "aac",
+        "3gp",
+        "css",
+        "zip",
+        "xls",
+        "xml",
+        "gz",
+        "tgz",
+    ],
+    collect_backups: false,
+    backup_extensions: [
+        "~",
+        ".bak",
+        ".bak2",
+        ".old",
+        ".1",
+    ],
+    collect_words: false,
+    force_recursion: false,
+    update_app: false,
+    scan_dir_listings: false,
+    request_file: "",
+    protocol: "https",
+    limit_bars: 0,
+    unique: false,
+    response_size_limit: 4194304,
+}
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.48.173.150/layout/ (Apache)
+200      GET        5l     1252w   232948c http://10.48.173.150/layout/bootstrap.min.css
+200      GET       92l      176w     2591c http://10.48.173.150/
+301      GET        9l       28w      317c http://10.48.173.150/includes => http://10.48.173.150/includes/
+200      GET       92l      176w     2591c http://10.48.173.150/index.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.48.173.150/includes (Apache)
+200      GET        0l        0w        0c http://10.48.173.150/includes/skin.php
+302      GET        0l        0w        0c http://10.48.173.150/includes/header.php => index.php
+301      GET        9l       28w      311c http://10.48.173.150/js => http://10.48.173.150/js/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.48.173.150/js (Apache)
+301      GET        9l       28w      315c http://10.48.173.150/layout => http://10.48.173.150/layout/
+200      GET      490l     2248w    45842c http://10.48.173.150/info.php
+200      GET        6l      831w    80663c http://10.48.173.150/js/bootstrap.bundle.min.js
+301      GET        9l       28w      314c http://10.48.173.150/skins => http://10.48.173.150/skins/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.48.173.150/skins (Apache)
+200      GET        3l        7w       56c http://10.48.173.150/skins/default.php
+200      GET        3l        7w       56c http://10.48.173.150/skins/red.php
+200      GET        3l        7w       56c http://10.48.173.150/skins/green.php
+200      GET        3l        7w       56c http://10.48.173.150/skins/blue.php

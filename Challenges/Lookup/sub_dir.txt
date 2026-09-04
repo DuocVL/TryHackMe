@@ -1,0 +1,18 @@
+/.hta.php            [33m (Status: 403)[0m [Size: 281]
+/.hta.sh             [33m (Status: 403)[0m [Size: 281]
+/.hta.txt            [33m (Status: 403)[0m [Size: 281]
+/.hta.js             [33m (Status: 403)[0m [Size: 281]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 281]
+/.htaccess.js        [33m (Status: 403)[0m [Size: 281]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 281]
+/.hta                [33m (Status: 403)[0m [Size: 281]
+/.htpasswd.sh        [33m (Status: 403)[0m [Size: 281]
+/.htaccess           [33m (Status: 403)[0m [Size: 281]
+/.htpasswd           [33m (Status: 403)[0m [Size: 281]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 281]
+/.htaccess.sh        [33m (Status: 403)[0m [Size: 281]
+/.htpasswd.js        [33m (Status: 403)[0m [Size: 281]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 281]
+/index.php           [36m (Status: 302)[0m [Size: 0][34m [--> http://lookup.thm][0m
+/index.php           [36m (Status: 302)[0m [Size: 0][34m [--> http://lookup.thm][0m
+/server-status       [33m (Status: 403)[0m [Size: 281]

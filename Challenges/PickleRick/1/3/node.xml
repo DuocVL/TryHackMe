@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="3" master_id="0" name="Kham pha dich vu web" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773529457" ts_lastsave="1773530321">
+    <rich_text>
+
+-&gt;Username: R1ckRul3s</rich_text>
+    <encoded_png char_offset="0" justification="left" link="" sha256sum="7bfacd0a36f5125da97b6956fa1f6832c50b3b5bb2076af1eef5d4d6ea233869"/>
+    <encoded_png char_offset="1" justification="left" link="" sha256sum="1081a68fd62f0751321129229642aa82693c23c341d998f3acde9ae59901aa21"/>
+  </node>
+</cherrytree>

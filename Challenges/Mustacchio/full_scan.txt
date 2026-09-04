@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Sun May 24 23:23:33 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate 5000 -oN full_scan.txt 10.48.152.150
+Nmap scan report for 10.48.152.150
+Host is up (0.29s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+8765/tcp open  ultraseek-http
+
+# Nmap done at Sun May 24 23:24:02 2026 -- 1 IP address (1 host up) scanned in 29.21 seconds

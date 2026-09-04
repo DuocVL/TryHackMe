@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="4" master_id="0" name="Quet thu muc , tep an" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773529740" ts_lastsave="1773529884">
+    <rich_text>└─$ gobuster dir -u </rich_text>
+    <rich_text link="webs http://$IP">http://$IP</rich_text>
+    <rich_text> -w /usr/share/wordlists/dirb/common.txt -x php,html,txt,js,sh,java,py,docx,xlxs -t 50 -o ScanDir.txt 
+===============================================================
+Gobuster v3.8
+by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     </rich_text>
+    <rich_text link="webs http://10.49.169.120">http://10.49.169.120</rich_text>
+    <rich_text>
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.8
+[+] Extensions:              php,html,txt,js,sh,java,docx,py,xlxs
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.js              (Status: 403) [Size: 278]
+/.hta.sh              (Status: 403) [Size: 278]
+/.hta.txt             (Status: 403) [Size: 278]
+/.hta                 (Status: 403) [Size: 278]
+/.hta.java            (Status: 403) [Size: 278]
+/.hta.py              (Status: 403) [Size: 278]
+/.hta.docx            (Status: 403) [Size: 278]
+/.htaccess            (Status: 403) [Size: 278]
+/.htaccess.js         (Status: 403) [Size: 278]
+/.htaccess.txt        (Status: 403) [Size: 278]
+/.htaccess.html       (Status: 403) [Size: 278]
+/.hta.html            (Status: 403) [Size: 278]
+/.htaccess.php        (Status: 403) [Size: 278]
+/.hta.php             (Status: 403) [Size: 278]
+/.hta.xlxs            (Status: 403) [Size: 278]
+/.htaccess.sh         (Status: 403) [Size: 278]
+/.htpasswd.html       (Status: 403) [Size: 278]
+/.htaccess.py         (Status: 403) [Size: 278]
+/.htpasswd.sh         (Status: 403) [Size: 278]
+/.htaccess.xlxs       (Status: 403) [Size: 278]
+/.htpasswd.java       (Status: 403) [Size: 278]
+/.htpasswd.js         (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/.htaccess.java       (Status: 403) [Size: 278]
+/.htaccess.docx       (Status: 403) [Size: 278]
+/.htpasswd.txt        (Status: 403) [Size: 278]
+/.htpasswd.docx       (Status: 403) [Size: 278]
+/.htpasswd.py         (Status: 403) [Size: 278]
+/.htpasswd.xlxs       (Status: 403) [Size: 278]
+/.htpasswd.php        (Status: 403) [Size: 278]
+/assets               (Status: 301) [Size: 315] [--&gt; </rich_text>
+    <rich_text link="webs http://10.49.169.120/assets/]">http://10.49.169.120/assets/]</rich_text>
+    <rich_text>
+/denied.php           (Status: 302) [Size: 0] [--&gt; /login.php]
+/index.html           (Status: 200) [Size: 1062]
+/index.html           (Status: 200) [Size: 1062]
+/login.php            (Status: 200) [Size: 882]
+/portal.php           (Status: 302) [Size: 0] [--&gt; /login.php]
+/robots.txt           (Status: 200) [Size: 17]
+/robots.txt           (Status: 200) [Size: 17]
+/server-status        (Status: 403) [Size: 278]
+Progress: 46130 / 46130 (100.00%)
+===============================================================
+Finished
+===============================================================
+
+→ 
+</rich_text>
+  </node>
+</cherrytree>

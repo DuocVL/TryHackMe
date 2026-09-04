@@ -1,0 +1,44 @@
+# Nmap 7.95 scan initiated Sun May 24 19:05:07 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -sV -oN Scan_Port.txt 10.49.147.124
+Nmap scan report for 10.49.147.124
+Host is up (0.12s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 90:35:66:f4:c6:d2:95:12:1b:e8:cd:de:aa:4e:03:23 (RSA)
+|   256 53:9d:23:67:34:cf:0a:d5:5a:9a:11:74:bd:fd:de:71 (ECDSA)
+|_  256 a2:8f:db:ae:9e:3d:c9:e6:a9:ca:03:b1:d7:1b:66:83 (ED25519)
+80/tcp  open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Fowsniff Corp - Delivering Solutions
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-robots.txt: 1 disallowed entry 
+|_/
+110/tcp open  pop3    Dovecot pop3d
+|_pop3-capabilities: USER SASL(PLAIN) PIPELINING AUTH-RESP-CODE CAPA RESP-CODES TOP UIDL
+143/tcp open  imap    Dovecot imapd
+|_imap-capabilities: IDLE OK listed LITERAL+ post-login SASL-IR ID have more capabilities Pre-login LOGIN-REFERRALS AUTH=PLAINA0001 ENABLE IMAP4rev1
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=5/24%OT=22%CT=1%CU=40956%PV=Y%DS=3%DC=T%G=Y%TM=6A13BC8
+OS:1%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=107%TI=Z%CI=I%TS=8)SEQ(SP=1
+OS:02%GCD=1%ISR=10C%TI=Z%CI=I%TS=8)SEQ(SP=103%GCD=1%ISR=10A%TI=Z%CI=I%TS=8)
+OS:SEQ(SP=104%GCD=1%ISR=10A%TI=Z%CI=I%TS=8)SEQ(SP=106%GCD=1%ISR=10D%TI=Z%CI
+OS:=I%TS=8)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E8NNT11NW7%O4=M4E8ST11NW7
+OS:%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%
+OS:W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M4E8NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S
+OS:=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%R
+OS:D=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U
+OS:1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=N)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 587/tcp)
+HOP RTT       ADDRESS
+1   115.76 ms 192.168.128.1
+2   ...
+3   117.62 ms 10.49.147.124
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 24 19:05:37 2026 -- 1 IP address (1 host up) scanned in 30.25 seconds

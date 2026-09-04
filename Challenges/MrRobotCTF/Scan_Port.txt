@@ -1,0 +1,36 @@
+# Nmap 7.95 scan initiated Wed May 27 21:27:36 2026 as: /usr/lib/nmap/nmap --privileged -A -sV -T4 -oN Scan_Port.txt 10.49.184.42
+Nmap scan report for 10.49.184.42
+Host is up (0.12s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 a4:8a:3c:42:94:5c:c3:fa:56:b0:e3:d9:3e:28:96:5f (RSA)
+|   256 f1:ba:24:1b:1e:93:03:75:26:57:bd:de:64:e1:c6:af (ECDSA)
+|_  256 88:74:2d:86:09:3d:4b:61:33:3e:42:de:cd:58:33:35 (ED25519)
+80/tcp  open  http     Apache httpd
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+443/tcp open  ssl/http Apache httpd
+| ssl-cert: Subject: commonName=www.example.com
+| Not valid before: 2015-09-16T10:45:03
+|_Not valid after:  2025-09-13T10:45:03
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized|phone|storage-misc
+Running (JUST GUESSING): Linux 4.X|5.X|3.X (91%), Crestron 2-Series (86%), Google Android 10.X|11.X|12.X (85%), HP embedded (85%)
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/o:crestron:2_series cpe:/o:linux:linux_kernel:3 cpe:/o:google:android:10 cpe:/o:google:android:11 cpe:/o:google:android:12 cpe:/h:hp:p2000_g3
+Aggressive OS guesses: Linux 4.15 - 5.19 (91%), Linux 4.15 (90%), Linux 5.4 (90%), Crestron XPanel control system (86%), Linux 3.8 - 3.16 (86%), Android 10 - 12 (Linux 4.14 - 4.19) (85%), HP P2000 G3 NAS device (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   119.08 ms 192.168.128.1
+2   ...
+3   119.29 ms 10.49.184.42
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 27 21:28:12 2026 -- 1 IP address (1 host up) scanned in 35.73 seconds
