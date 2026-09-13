@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<cherrytree>
-  <node unique_id="1" master_id="0" name="Tong quan thu thach" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773191760" ts_lastsave="1773192051">
-    <rich_text link="webs https://tryhackme.com/room/agentsudoctf">https://tryhackme.com/room/agentsudoctf</rich_text>
-    <rich_text>
-
-Bạn vừa phát hiện ra một máy chủ bí mật nằm sâu dưới đáy biển. Nhiệm vụ của bạn là đột nhập vào máy chủ và khám phá sự thật.</rich_text>
-  </node>
-</cherrytree>
