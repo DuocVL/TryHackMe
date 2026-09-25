@@ -1,0 +1,16 @@
+# Nmap 7.99 scan initiated Wed Sep 23 11:49:46 2026 as: /usr/lib/nmap/nmap --privileged -sSV -O -oN ScanPort.txt 10.48.144.82
+Nmap scan report for 10.48.144.82
+Host is up (0.12s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.14.0 (Ubuntu)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized|phone|storage-misc
+Running (JUST GUESSING): Linux 4.X|5.X|6.X (91%), Crestron 2-Series (86%), Google Android 10.X|11.X|12.X (85%), HP embedded (85%)
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/o:crestron:2_series cpe:/o:google:android:10 cpe:/o:google:android:11 cpe:/o:google:android:12 cpe:/o:linux:linux_kernel:6 cpe:/h:hp:p2000_g3
+Aggressive OS guesses: Linux 4.15 - 5.19 (91%), Linux 4.15 (90%), Linux 5.4 - 5.15 (90%), Crestron XPanel control system (86%), Android 10 - 12 (Linux 4.14 - 4.19) (85%), Linux 5.14 - 6.8 (85%), HP P2000 G3 NAS device (85%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Sep 23 11:50:10 2026 -- 1 IP address (1 host up) scanned in 23.78 seconds
