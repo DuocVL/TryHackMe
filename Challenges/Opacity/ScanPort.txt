@@ -1,0 +1,50 @@
+# Nmap 7.99 scan initiated Mon Sep 28 10:32:40 2026 as: /usr/lib/nmap/nmap --privileged -sSVC -O -oN ScanPort.txt 10.49.138.220
+Nmap scan report for 10.49.138.220
+Host is up (0.21s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 5c:b9:0c:51:5b:81:30:c5:8a:c7:9a:27:0f:2f:a3:cd (RSA)
+|   256 5b:77:ec:c2:41:da:d1:cf:87:a2:98:4e:b5:03:d6:85 (ECDSA)
+|_  256 fd:12:8e:cb:79:27:39:e8:03:f4:72:46:4a:e2:ec:25 (ED25519)
+80/tcp  open  http        Apache httpd 2.4.41 ((Ubuntu))
+| http-title: Login
+|_Requested resource was login.php
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+139/tcp open  netbios-ssn Samba smbd 4
+445/tcp open  netbios-ssn Samba smbd 4
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.99%E=4%D=9/28%OT=22%CT=1%CU=39058%PV=Y%DS=3%DC=I%G=Y%TM=6ABA7AA
+OS:E%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=105%TI=Z%CI=Z%II=I%TS=A)SEQ
+OS:(SP=104%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=105%GCD=1%ISR=10A%TI=Z%
+OS:CI=Z%II=I%TS=A)SEQ(SP=106%GCD=1%ISR=10A%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=FC%GC
+OS:D=1%ISR=10E%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E
+OS:8NNT11NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%
+OS:W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW7%CC
+OS:=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T
+OS:=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=
+OS:0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=
+OS:Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=
+OS:G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+|_clock-skew: -1s
+| smb2-time: 
+|   date: 2026-09-28T14:33:10
+|_  start_date: N/A
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 28 10:33:18 2026 -- 1 IP address (1 host up) scanned in 38.44 seconds
