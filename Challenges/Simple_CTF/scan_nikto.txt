@@ -1,0 +1,16 @@
+- Nikto v2.5.0/
++ Target Host: 10.48.134.80
++ Target Port: 80
++ GET /simple/: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /simple/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /simple/: Cookie CMSSESSIDd6a5f2400115 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ HEAD /simple: Apache/2.4.18 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ OPTIONS OPTIONS: Allowed HTTP Methods: POST, OPTIONS, GET, HEAD .
++ BLIJXOPB /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /simple/config.php: PHP Config file may contain database IDs and passwords.
++ GET /simple/admin/login.php?action=insert&username=test&password=test: phpAuction may allow user admin accounts to be inserted without proper authentication. Attempt to log in with user 'test' password 'test' to verify. See: CVE-2002-0995: 
++ GET /simple/doc/: The /doc/ directory is browsable. This may be /usr/doc. See: CVE-1999-0678: 
++ GET /simple/lib/: This might be interesting.
++ GET /simple/tmp/: Directory indexing found.
++ GET /simple/tmp/: This might be interesting.
++ GET /simple/admin/login.php: Admin login page/section found.

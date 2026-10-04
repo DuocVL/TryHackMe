@@ -1,0 +1,20 @@
+# Nmap 7.99 scan initiated Wed Sep 30 00:52:27 2026 as: /usr/lib/nmap/nmap --privileged -sSVC -O -Pn -oN ScanPort.txt 10.48.162.200
+Nmap scan report for 10.48.162.200
+Host is up (0.11s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 fc:af:65:36:45:57:50:6b:71:61:58:f5:cc:99:bd:20 (RSA)
+|   256 c7:41:e4:8e:70:b4:9c:94:14:a0:33:09:63:98:e2:68 (ECDSA)
+|_  256 46:7d:f6:56:a1:55:1b:80:c7:be:78:25:7a:09:aa:c7 (ED25519)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+|_http-title: Did not follow redirect to http://creative.thm
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.15 - 5.19 (91%), Linux 5.14 - 6.8 (91%), Linux 5.4 - 5.15 (90%), Linux 4.15 (88%), Crestron XPanel control system (86%), Linux 3.8 - 3.16 (86%), Android 10 - 12 (Linux 4.14 - 4.19) (85%), HP P2000 G3 NAS device (85%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Sep 30 00:52:55 2026 -- 1 IP address (1 host up) scanned in 28.21 seconds

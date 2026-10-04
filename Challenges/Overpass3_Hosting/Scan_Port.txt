@@ -1,0 +1,33 @@
+# Nmap 7.95 scan initiated Tue Jun  2 03:00:16 2026 as: /usr/lib/nmap/nmap --privileged -A -sV -T4 -oN Scan_Port.txt 10.49.172.73
+Nmap scan report for 10.49.172.73
+Host is up (0.12s latency).
+Not shown: 986 filtered tcp ports (no-response), 11 filtered tcp ports (admin-prohibited)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+22/tcp open  ssh     OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 de:5b:0e:b5:40:aa:43:4d:2a:83:31:14:20:77:9c:a1 (RSA)
+|   256 f4:b5:a6:60:f4:d1:bf:e2:85:2e:2e:7e:5f:4c:ce:38 (ECDSA)
+|_  256 29:e6:61:09:ed:8a:88:2b:55:74:f2:b7:33:ae:df:c8 (ED25519)
+80/tcp open  http    Apache httpd 2.4.37 ((centos))
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.37 (centos)
+|_http-title: Overpass Hosting
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized|phone|storage-misc
+Running (JUST GUESSING): Linux 4.X|5.X|3.X (91%), Crestron 2-Series (86%), Google Android 10.X|11.X|12.X (85%), HP embedded (85%)
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/o:linux:linux_kernel:3 cpe:/o:crestron:2_series cpe:/o:google:android:10 cpe:/o:google:android:11 cpe:/o:google:android:12 cpe:/h:hp:p2000_g3
+Aggressive OS guesses: Linux 4.15 - 5.19 (91%), Linux 4.15 (90%), Linux 3.10 - 3.13 (88%), Crestron XPanel control system (86%), Amazon Linux AMI 2018.03 (Linux 4.14) (86%), Android 10 - 12 (Linux 4.14 - 4.19) (85%), HP P2000 G3 NAS device (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 3 hops
+Service Info: OS: Unix
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   111.82 ms 192.168.128.1
+2   ...
+3   113.76 ms 10.49.172.73
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jun  2 03:00:42 2026 -- 1 IP address (1 host up) scanned in 26.28 seconds

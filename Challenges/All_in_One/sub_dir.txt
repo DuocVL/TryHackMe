@@ -1,0 +1,2 @@
+/wordpress           [36m (Status: 301)[0m [Size: 316][34m [--> http://10.49.179.91/wordpress/][0m
+/hackathons          [32m (Status: 200)[0m [Size: 197]

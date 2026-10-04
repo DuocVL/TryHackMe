@@ -1,0 +1,32 @@
+# Nmap 7.99 scan initiated Tue Sep 22 22:16:58 2026 as: /usr/lib/nmap/nmap --privileged -sSV -O -oN ScanPort.txt 10.48.137.138
+Nmap scan report for 10.48.137.138
+Host is up (0.12s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE    SERVICE     VERSION
+22/tcp   open     ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+111/tcp  open     rpcbind     2-4 (RPC #100000)
+139/tcp  open     netbios-ssn Samba smbd 4
+445/tcp  open     netbios-ssn Samba smbd 4
+873/tcp  open     rsync       (protocol version 31)
+2049/tcp open     nfs         3-4 (RPC #100003)
+9090/tcp filtered zeus-admin
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.99%E=4%D=9/22%OT=22%CT=1%CU=30833%PV=Y%DS=3%DC=I%G=Y%TM=6AB3379
+OS:1%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10D%TI=Z%CI=Z%II=I%TS=A)SEQ
+OS:(SP=107%GCD=1%ISR=10A%TI=Z%CI=Z%TS=A)SEQ(SP=107%GCD=1%ISR=10C%TI=Z%CI=Z%
+OS:II=I%TS=A)SEQ(SP=FB%GCD=1%ISR=106%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=FE%GCD=1%IS
+OS:R=108%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E8NNT11
+OS:NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B
+OS:3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW7%CC=Y%Q=)
+OS:T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T
+OS:6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+
+OS:%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK
+OS:=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep 22 22:21:05 2026 -- 1 IP address (1 host up) scanned in 247.19 seconds

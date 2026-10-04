@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="6" master_id="0" name="Ket noi den cong FTP" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1773188311" ts_lastsave="1773189113">
+    <rich_text>Ket noi den dich vu FTP bang tai khaong anonymous
+
+
+
+-&gt;Thay 2 file locks.txt , task.txt
+→ thay duoc danh sach mat khau , ten nguoi tao chuong trinh
+→ dung hydra de btutefore tim mat khau</rich_text>
+    <encoded_png char_offset="51" justification="left" link="" sha256sum="0595820e5f2ea8024eb305900505a216fdeb9242d035dc7306a0f8eeecd8abef"/>
+  </node>
+</cherrytree>

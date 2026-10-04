@@ -1,0 +1,1 @@
+# Hydra v9.6 run at 2026-05-26 17:56:32 on 10.48.168.30 ftp (hydra -l dale -P /usr/share/wordlists/rockyou.txt -o brute_force_ftp.txt 10.48.168.30 ftp)

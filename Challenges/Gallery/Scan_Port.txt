@@ -1,0 +1,48 @@
+# Nmap 7.95 scan initiated Mon Jun  1 08:22:14 2026 as: /usr/lib/nmap/nmap --privileged -A -sV -T4 -oN Scan_Port.txt 10.49.155.74
+Nmap scan report for 10.49.155.74
+Host is up (0.12s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 ce:a9:0a:72:df:06:d1:ed:6e:29:af:cb:63:51:be:c3 (RSA)
+|   256 ab:54:45:e2:e5:6d:ca:39:f2:27:38:06:15:d2:06:20 (ECDSA)
+|_  256 f5:20:18:d2:5b:d8:38:d2:62:b2:18:76:54:49:1b:3b (ED25519)
+80/tcp   open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+8080/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Simple Image Gallery System
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=6/1%OT=22%CT=1%CU=41873%PV=Y%DS=3%DC=T%G=Y%TM=6A1DB1D4
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=106%TI=Z%CI=Z%II=I%TS=A)SEQ(
+OS:SP=102%GCD=1%ISR=10E%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=105%GCD=1%ISR=109%TI=Z%C
+OS:I=Z%II=I%TS=A)SEQ(SP=107%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=107%GC
+OS:D=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E
+OS:8NNT11NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%
+OS:W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW7%CC
+OS:=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T
+OS:=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=
+OS:0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=
+OS:Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=
+OS:G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   118.18 ms 192.168.128.1
+2   ...
+3   118.58 ms 10.49.155.74
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun  1 08:22:44 2026 -- 1 IP address (1 host up) scanned in 29.57 seconds

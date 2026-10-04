@@ -1,0 +1,74 @@
+# Nmap 7.95 scan initiated Fri May 22 02:29:37 2026 as: /usr/lib/nmap/nmap --privileged -p8009 --script ajp-* -oN attack_ajp.txt 10.48.154.22
+Nmap scan report for 10.48.154.22
+Host is up (0.13s latency).
+
+PORT     STATE SERVICE
+8009/tcp open  ajp13
+| ajp-methods: 
+|_  Supported methods: GET HEAD POST OPTIONS
+| ajp-headers: 
+|_  Content-Type: text/html;charset=UTF-8
+| ajp-request: 
+| AJP/1.3 200 200
+| Content-Type: text/html;charset=UTF-8
+| 
+| tps://tomcat.apache.org/taglibs/">Taglibs</a></li>
+|                             <li><a href="/docs/deployer-howto.html">Deployer</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <div class="col20">
+|                     <div class="container">
+|                         <h4>Other Documentation</h4>
+|                         <ul>
+|                             <li><a href="https://tomcat.apache.org/connectors-doc/">Tomcat Connectors</a></li>
+|                             <li><a href="https://tomcat.apache.org/connectors-doc/">mod_jk Documentation</a></li>
+|                             <li><a href="https://tomcat.apache.org/native-doc/">Tomcat Native</a></li>
+|                             <li><a href="/docs/deployer-howto.html">Deployer</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <div class="col20">
+|                     <div class="container">
+|                         <h4>Get Involved</h4>
+|                         <ul>
+|                             <li><a href="https://tomcat.apache.org/getinvolved.html">Overview</a></li>
+|                             <li><a href="https://tomcat.apache.org/source.html">Source Repositories</a></li>
+|                             <li><a href="https://tomcat.apache.org/lists.html">Mailing Lists</a></li>
+|                             <li><a href="https://wiki.apache.org/tomcat/FrontPage">Wiki</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <div class="col20">
+|                     <div class="container">
+|                         <h4>Miscellaneous</h4>
+|                         <ul>
+|                             <li><a href="https://tomcat.apache.org/contact.html">Contact</a></li>
+|                             <li><a href="https://tomcat.apache.org/legal.html">Legal</a></li>
+|                             <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+|                             <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <div class="col20">
+|                     <div class="container">
+|                         <h4>Apache Software Foundation</h4>
+|                         <ul>
+|                             <li><a href="https://tomcat.apache.org/whoweare.html">Who We Are</a></li>
+|                             <li><a href="https://tomcat.apache.org/heritage.html">Heritage</a></li>
+|                             <li><a href="https://www.apache.org">Apache Home</a></li>
+|                             <li><a href="https://tomcat.apache.org/resources.html">Resources</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <br class="separator" />
+|             </div>
+|             <p class="copyright">Copyright &copy;1999-2026 Apache Software Foundation.  All Rights Reserved</p>
+|         </div>
+|     </body>
+| 
+|_</html>
+| ajp-brute: 
+|_  URL does not require authentication
+
+# Nmap done at Fri May 22 02:29:38 2026 -- 1 IP address (1 host up) scanned in 0.83 seconds

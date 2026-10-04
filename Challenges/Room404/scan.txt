@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Wed Aug  5 00:08:43 2026 as: /usr/lib/nmap/nmap -sV -sC -oN scan.txt 10.49.132.192
+Nmap scan report for 10.49.132.192
+Host is up (0.13s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.16 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 96:0f:92:21:80:d9:0d:d9:ea:b9:2c:6b:20:f2:b9:8e (ECDSA)
+|_  256 de:3c:7b:3d:45:b9:dd:03:d5:bf:3c:63:4a:cf:f3:fd (ED25519)
+8080/tcp open  http    Werkzeug httpd 3.0.1 (Python 3.12.3)
+| http-git: 
+|   10.49.132.192:8080/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|_    Last commit message: initial Byte Lotus guest platform 
+|_http-server-header: Werkzeug/3.0.1 Python/3.12.3
+|_http-title: Byte Lotus &mdash; Stay Noticed
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug  5 00:08:57 2026 -- 1 IP address (1 host up) scanned in 13.60 seconds

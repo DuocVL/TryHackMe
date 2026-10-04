@@ -1,0 +1,33 @@
+/.htaccess.php       [33m (Status: 403)[0m [Size: 277]
+/.htaccess.sh        [33m (Status: 403)[0m [Size: 277]
+/.htaccess.js        [33m (Status: 403)[0m [Size: 277]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 277]
+/.htpasswd.js        [33m (Status: 403)[0m [Size: 277]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 277]
+/.htpasswd           [33m (Status: 403)[0m [Size: 277]
+/.htpasswd.sh        [33m (Status: 403)[0m [Size: 277]
+/.hta.sh             [33m (Status: 403)[0m [Size: 277]
+/.htaccess           [33m (Status: 403)[0m [Size: 277]
+/.hta                [33m (Status: 403)[0m [Size: 277]
+/.hta.js             [33m (Status: 403)[0m [Size: 277]
+/.hta.txt            [33m (Status: 403)[0m [Size: 277]
+/.hta.php            [33m (Status: 403)[0m [Size: 277]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 277]
+/albums              [36m (Status: 301)[0m [Size: 321][34m [--> http://10.49.155.74/gallery/albums/][0m
+/archives            [36m (Status: 301)[0m [Size: 323][34m [--> http://10.49.155.74/gallery/archives/][0m
+/assets              [36m (Status: 301)[0m [Size: 321][34m [--> http://10.49.155.74/gallery/assets/][0m
+/build               [36m (Status: 301)[0m [Size: 320][34m [--> http://10.49.155.74/gallery/build/][0m
+/classes             [36m (Status: 301)[0m [Size: 322][34m [--> http://10.49.155.74/gallery/classes/][0m
+/config.php          [32m (Status: 200)[0m [Size: 0]
+/create_account.php  [32m (Status: 200)[0m [Size: 8]
+/database            [36m (Status: 301)[0m [Size: 323][34m [--> http://10.49.155.74/gallery/database/][0m
+/dist                [36m (Status: 301)[0m [Size: 319][34m [--> http://10.49.155.74/gallery/dist/][0m
+/home.php            [31m (Status: 500)[0m [Size: 0]
+/inc                 [36m (Status: 301)[0m [Size: 318][34m [--> http://10.49.155.74/gallery/inc/][0m
+/index.php           [32m (Status: 200)[0m [Size: 16897]
+/index.php           [32m (Status: 200)[0m [Size: 16897]
+/login.php           [32m (Status: 200)[0m [Size: 8021]
+/plugins             [36m (Status: 301)[0m [Size: 322][34m [--> http://10.49.155.74/gallery/plugins/][0m
+/report              [36m (Status: 301)[0m [Size: 321][34m [--> http://10.49.155.74/gallery/report/][0m
+/uploads             [36m (Status: 301)[0m [Size: 322][34m [--> http://10.49.155.74/gallery/uploads/][0m
+/user                [36m (Status: 301)[0m [Size: 319][34m [--> http://10.49.155.74/gallery/user/][0m

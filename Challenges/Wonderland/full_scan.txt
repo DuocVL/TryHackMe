@@ -1,0 +1,39 @@
+# Nmap 7.95 scan initiated Mon Jun  1 03:32:01 2026 as: /usr/lib/nmap/nmap --privileged -p- -A -T4 -sV -oN full_scan.txt 10.49.170.155
+Nmap scan report for 10.49.170.155
+Host is up (0.12s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT      STATE    SERVICE VERSION
+22/tcp    open     ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 8e:ee:fb:96:ce:ad:70:dd:05:a9:3b:0d:b0:71:b8:63 (RSA)
+|   256 7a:92:79:44:16:4f:20:43:50:a9:a8:47:e2:c2:be:84 (ECDSA)
+|_  256 00:0b:80:44:e6:3d:4b:69:47:92:2c:55:14:7e:2a:c9 (ED25519)
+80/tcp    open     http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Follow the white rabbit.
+10406/tcp filtered unknown
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=6/1%OT=22%CT=1%CU=32773%PV=Y%DS=3%DC=T%G=Y%TM=6A1D708C
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=10D%TI=Z%CI=Z%II=I%TS=A)SEQ(
+OS:SP=103%GCD=1%ISR=10D%TI=Z%CI=Z%TS=A)SEQ(SP=105%GCD=1%ISR=107%TI=Z%CI=Z%I
+OS:I=I%TS=A)SEQ(SP=105%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=106%GCD=1%I
+OS:SR=106%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M4E8ST11NW6%O2=M4E8ST11NW6%O3=M4E8NNT1
+OS:1NW6%O4=M4E8ST11NW6%O5=M4E8ST11NW6%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%W3=F4
+OS:B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW6%CC=Y%Q=
+OS:)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W
+OS:=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+OS:T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S
+OS:+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUC
+OS:K=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 3389/tcp)
+HOP RTT       ADDRESS
+1   117.35 ms 192.168.128.1
+2   ...
+3   116.74 ms 10.49.170.155
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun  1 03:44:12 2026 -- 1 IP address (1 host up) scanned in 731.40 seconds

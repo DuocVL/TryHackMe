@@ -1,0 +1,2 @@
+# Nmap 7.95 scan initiated Tue May 26 21:53:07 2026 as: /usr/lib/nmap/nmap --privileged -sS -p- -oN port_scan 10.48.189.250
+# Nmap done at Tue May 26 21:53:11 2026 -- 1 IP address (0 hosts up) scanned in 3.10 seconds

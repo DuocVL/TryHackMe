@@ -1,0 +1,4 @@
+/images              [36m (Status: 301)[0m [Size: 320][34m [--> http://10.49.177.24:3333/images/][0m
+/css                 [36m (Status: 301)[0m [Size: 317][34m [--> http://10.49.177.24:3333/css/][0m
+/js                  [36m (Status: 301)[0m [Size: 316][34m [--> http://10.49.177.24:3333/js/][0m
+/internal            [36m (Status: 301)[0m [Size: 322][34m [--> http://10.49.177.24:3333/internal/][0m

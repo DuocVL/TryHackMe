@@ -1,0 +1,25 @@
+/.hta.sh             [33m (Status: 403)[0m [Size: 316]
+/.htpasswd           [33m (Status: 403)[0m [Size: 318]
+/.hta.php            [33m (Status: 403)[0m [Size: 317]
+/.htaccess.txt       [33m (Status: 403)[0m [Size: 322]
+/.hta.js             [33m (Status: 403)[0m [Size: 316]
+/.hta.txt            [33m (Status: 403)[0m [Size: 317]
+/.hta                [33m (Status: 403)[0m [Size: 313]
+/.htaccess.js        [33m (Status: 403)[0m [Size: 321]
+/.htaccess.sh        [33m (Status: 403)[0m [Size: 321]
+/.htaccess           [33m (Status: 403)[0m [Size: 318]
+/.htaccess.php       [33m (Status: 403)[0m [Size: 322]
+/.htpasswd.php       [33m (Status: 403)[0m [Size: 322]
+/.htpasswd.sh        [33m (Status: 403)[0m [Size: 321]
+/.htpasswd.txt       [33m (Status: 403)[0m [Size: 322]
+/.htpasswd.js        [33m (Status: 403)[0m [Size: 321]
+/cache               [36m (Status: 301)[0m [Size: 335][34m [--> http://10.48.150.242/joomla/administrator/cache/][0m
+/components          [36m (Status: 301)[0m [Size: 340][34m [--> http://10.48.150.242/joomla/administrator/components/][0m
+/help                [36m (Status: 301)[0m [Size: 334][34m [--> http://10.48.150.242/joomla/administrator/help/][0m
+/includes            [36m (Status: 301)[0m [Size: 338][34m [--> http://10.48.150.242/joomla/administrator/includes/][0m
+/index.php           [32m (Status: 200)[0m [Size: 5161]
+/index.php           [32m (Status: 200)[0m [Size: 5161]
+/language            [36m (Status: 301)[0m [Size: 338][34m [--> http://10.48.150.242/joomla/administrator/language/][0m
+/logs                [36m (Status: 301)[0m [Size: 334][34m [--> http://10.48.150.242/joomla/administrator/logs/][0m
+/modules             [36m (Status: 301)[0m [Size: 337][34m [--> http://10.48.150.242/joomla/administrator/modules/][0m
+/templates           [36m (Status: 301)[0m [Size: 339][34m [--> http://10.48.150.242/joomla/administrator/templates/][0m

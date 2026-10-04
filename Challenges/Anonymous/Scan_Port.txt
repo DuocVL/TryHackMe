@@ -1,0 +1,76 @@
+# Nmap 7.95 scan initiated Mon Jun  1 07:10:11 2026 as: /usr/lib/nmap/nmap --privileged -A -sV -T4 -oN Scan_Port.txt 10.49.188.171
+Nmap scan report for 10.49.188.171
+Host is up (0.13s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         vsftpd 2.0.8 or later
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxrwxrwx    2 111      113          4096 Jun 04  2020 scripts [NSE: writeable]
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.250.70
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp  open  ssh         OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 8b:ca:21:62:1c:2b:23:fa:6b:c6:1f:a8:13:fe:1c:68 (RSA)
+|   256 95:89:a4:12:e2:e6:ab:90:5d:45:19:ff:41:5f:74:ce (ECDSA)
+|_  256 e1:2a:96:a4:ea:8f:68:8f:cc:74:b8:f0:28:72:70:cd (ED25519)
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=6/1%OT=21%CT=1%CU=38127%PV=Y%DS=3%DC=T%G=Y%TM=6A1DA108
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=101%TI=Z%CI=Z%II=I%TS=C)SEQ(
+OS:SP=102%GCD=1%ISR=104%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=102%GCD=1%ISR=10C%TI=Z%C
+OS:I=Z%II=I%TS=C)SEQ(SP=105%GCD=1%ISR=108%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=FF%GCD
+OS:=1%ISR=10E%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M4E8ST11NW6%O2=M4E8ST11NW6%O3=M4E8
+OS:NNT11NW6%O4=M4E8ST11NW6%O5=M4E8ST11NW6%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%W
+OS:3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW6%CC=
+OS:Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=
+OS:40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0
+OS:%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z
+OS:%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G
+OS:%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: Host: ANONYMOUS; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 0s, deviation: 4s, median: 0s
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: anonymous
+|   NetBIOS computer name: ANONYMOUS\x00
+|   Domain name: \x00
+|   FQDN: anonymous
+|_  System time: 2026-06-01T15:10:51+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2026-06-01T15:10:50
+|_  start_date: N/A
+|_nbstat: NetBIOS name: ANONYMOUS, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   116.67 ms 192.168.128.1
+2   ...
+3   117.43 ms 10.49.188.171
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun  1 07:11:04 2026 -- 1 IP address (1 host up) scanned in 53.66 seconds

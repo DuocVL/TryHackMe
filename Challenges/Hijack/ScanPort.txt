@@ -1,0 +1,41 @@
+# Nmap 7.99 scan initiated Tue Sep 29 08:05:29 2026 as: /usr/lib/nmap/nmap --privileged -sSVC -O -oN ScanPort.txt 10.48.141.248
+Nmap scan report for 10.48.141.248
+Host is up (0.11s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 3.0.3
+22/tcp   open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 94:ee:e5:23:de:79:6a:8d:63:f0:48:b8:62:d9:d7:ab (RSA)
+|   256 42:e9:55:1b:d3:f2:04:b6:43:b2:56:a3:23:46:72:c7 (ECDSA)
+|_  256 27:46:f6:54:44:98:43:2a:f0:59:ba:e3:b6:73:d3:90 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-title: Home
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+111/tcp  open  rpcbind 2-4 (RPC #100000)
+|_rpcinfo: ERROR: Script execution failed (use -d to debug)
+2049/tcp open  nfs     2-4 (RPC #100003)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.99%E=4%D=9/29%OT=21%CT=1%CU=36250%PV=Y%DS=3%DC=I%G=Y%TM=6ABBA9B
+OS:6%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=A)SEQ
+OS:(SP=104%GCD=1%ISR=10E%TI=Z%CI=I%II=I%TS=8)SEQ(SP=105%GCD=1%ISR=109%TI=Z%
+OS:CI=I%II=I%TS=8)SEQ(SP=FB%GCD=1%ISR=10F%TI=Z%CI=I%II=I%TS=9)SEQ(SP=FF%GCD
+OS:=1%ISR=10F%TI=Z%CI=I%II=I%TS=8)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E8
+OS:NNT11NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=68DF%W2=68DF%W
+OS:3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M4E8NNSNW7%CC=
+OS:Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=
+OS:40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0
+OS:%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z
+OS:%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G
+OS:%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep 29 08:06:14 2026 -- 1 IP address (1 host up) scanned in 45.32 seconds

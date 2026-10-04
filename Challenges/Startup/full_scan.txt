@@ -1,0 +1,57 @@
+# Nmap 7.95 scan initiated Fri May 29 02:15:19 2026 as: /usr/lib/nmap/nmap --privileged -p- -A -T4 -sV -oN full_scan.txt 10.48.162.102
+Nmap scan report for 10.48.162.102
+Host is up (0.13s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.250.70
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxrwxrwx    2 65534    65534        4096 Nov 12  2020 ftp [NSE: writeable]
+| -rw-r--r--    1 0        0          251631 Nov 12  2020 important.jpg
+|_-rw-r--r--    1 0        0             208 Nov 12  2020 notice.txt
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b9:a6:0b:84:1d:22:01:a4:01:30:48:43:61:2b:ab:94 (RSA)
+|   256 ec:13:25:8c:18:20:36:e6:ce:91:0e:16:26:eb:a2:be (ECDSA)
+|_  256 a2:ff:2a:72:81:aa:a2:9f:55:a4:dc:92:23:e6:b4:3f (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Maintenance
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=5/29%OT=21%CT=1%CU=33298%PV=Y%DS=3%DC=T%G=Y%TM=6A1968F
+OS:7%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=8)SEQ
+OS:(SP=103%GCD=1%ISR=109%TI=Z%CI=I%II=I%TS=8)SEQ(SP=106%GCD=1%ISR=10B%TI=Z%
+OS:CI=I%II=I%TS=8)SEQ(SP=107%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=8)SEQ(SP=FF%GC
+OS:D=1%ISR=10B%TI=Z%CI=I%II=I%TS=8)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E
+OS:8NNT11NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=68DF%W2=68DF%
+OS:W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M4E8NNSNW7%CC
+OS:=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T
+OS:=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=
+OS:0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=
+OS:Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=
+OS:G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   160.75 ms 192.168.128.1
+2   ...
+3   160.88 ms 10.48.162.102
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 29 02:22:47 2026 -- 1 IP address (1 host up) scanned in 448.01 seconds

